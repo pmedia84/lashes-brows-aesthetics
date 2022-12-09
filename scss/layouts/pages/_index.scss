@@ -1,0 +1,50 @@
+///Subtle heading settings
+/// 
+.bg-title{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-title::before{
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    font-size: $fs-700;
+    z-index: -1;
+    color: $secondary-300;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.services::before{//settings for title bg text
+    content: "SERVICES";
+
+}
+
+.about::before{//settings for title bg text
+    content: "ABOUT ME";
+
+}
+
+
+.treatments::before{//settings for title bg text
+    content: "TREATMENTS";
+
+}
+
+
+.reviews::before{//settings for title bg text
+    content: "REVIEWS";
+
+}
+
+//News Section
+.news{ //section title
+    position: relative;
+    border-bottom: 5px solid $tertiary;
+    width: max-content;
+    margin: 0 auto;
+
+}

@@ -1,0 +1,28 @@
+//set up fonts
+//@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Playfair+Display&display=swap');
+
+$body-ff    :'Josefin Sans', sans-serif;
+$headings-ff: 'Playfair Display', serif;
+$brand-font : 'Imperial Script', cursive;
+body{
+    font-family: $body-ff;
+}
+
+h1,h2,h3,h4{
+    font-family: $headings-ff;
+}
+
+.section-title{
+    font-size: $fs-500;
+    @media(min-width:$md){
+        font-size:$fs-600;
+    }
+}
+.section-subtitle{
+    font-size: $fs-400;
+    font-weight: 300;
+}
+.brand-font{
+    font-family: $brand-font;
+}
+

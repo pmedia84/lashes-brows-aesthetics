@@ -1,0 +1,19 @@
+.section-divider{
+    width: max-content;
+    margin: 0 auto;
+    margin-block: $spacer-3;
+}
+
+
+
+//remove settings if the browser does not support a parallax scroll
+@supports(background-attachment: fixed){
+    .parallax-bg{
+        min-height: 65vh;
+        background-image: url("../../assets/img/gallery/salon.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

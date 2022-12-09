@@ -1,0 +1,28 @@
+//standard text box with styles to draw out details. used on services pages
+.text-box{
+    padding: $spacer-2;
+}
+.text-box-title{
+    color: $secondary;
+    font-size: $fs-500;
+}
+
+.text-box-subtitle{
+    line-height: 1;
+    color: $tertiary;
+    font-size: $fs-350;
+    text-transform: capitalize;
+}
+.text-box-text{
+    font-weight: $fw-300;
+    line-height: 1.5;
+}
+.text-box-price-card{
+    width: max-content;
+    background-color: $primary-900;
+    padding: $spacer-2;
+    margin-block: $spacer-2;
+    color: $secondary;
+    font-size: 1rem;
+    border-radius: $border-radius;
+}

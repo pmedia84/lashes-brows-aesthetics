@@ -1,2 +1,2 @@
-# lashes-brows-aesthetics
- Lashes Brows & Aesthetics website
+# Lashes Brows & Aesthetics
+Website project, with a cms addon for client to manage content 

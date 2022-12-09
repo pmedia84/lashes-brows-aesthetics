@@ -1,0 +1,25 @@
+.review-slider{ //outer frame
+    background-color: #fff;
+    padding: $spacer-3;
+    border: 2px solid $tertiary;
+    border-radius: $border-radius;
+}
+
+.review-body{
+    display: flex;
+}
+
+.review-slider-body{
+    margin-left: $spacer-2;
+}
+
+.star-color{//review stars unrated
+    color: rgba(207, 207, 207, 0.514);
+    font-size: 1rem;
+}
+.star-color-rated{//review stars rated
+    color: #f9b805;
+}
+.review-slider-review-time{
+    font-weight: 300
+}

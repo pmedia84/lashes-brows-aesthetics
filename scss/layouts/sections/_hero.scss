@@ -1,0 +1,42 @@
+//hero containers, basic one for all pages, padding to bring content down below the nav bar
+.hero{
+    padding-top: $nav-height;//padding same height as nav bar
+    //bg image
+
+    background-image: url("../../assets/img/hero/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .hero-arrow{
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size:$fs-800;
+        color: #fff;
+        @media(min-width:$md){
+            font-size: $fs-900;
+        }
+        @media(min-width:$lg){
+            font-size: $fs-1000;
+        }
+    }
+    p{
+        font-size: $fs-400;
+        font-weight: 400;
+        color: rgb(242, 242, 242);
+    }
+}
+
+.hero-grid{//grid to place items 
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+.hero-text{
+    place-self: center;
+    text-align: center;
+}

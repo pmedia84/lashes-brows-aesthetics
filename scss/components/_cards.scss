@@ -1,0 +1,146 @@
+//simple card with header image
+
+.card, .profile-card{
+    background-color: #fff;
+    border-radius: $border-radius;
+}
+
+.card-header > img{
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card-body{
+    text-align: center;
+    padding: $spacer-3;
+    .card-body-title{
+        color: $secondary;
+        font-size: $fs-400;
+        text-align: center;
+        margin-block: $spacer-2;
+    }
+    p{
+        font-weight: 300;
+    }
+}
+
+.cards-grid-3{
+    display: grid;
+    gap: $spacer-3;
+    @media(min-width:$md){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+//change the first card when in a grid to span all columns
+@media(min-width:$md){
+    .cards-grid-3 .card:first-of-type{
+        grid-column: 1/3;
+
+    }
+}
+/////////////////
+
+///Card for staff members, brief info on front page with a link to about us for more info
+.profile-card{
+    padding: $spacer-3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.profile-img{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.profile-card-body{
+    p,li{
+        font-weight: 300;
+
+    }
+    
+}
+/////////////
+
+///CTA CARDS with bg img and cover card full width
+
+.cta-card{
+    background-image: url("../../assets/img/gallery/salon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: $spacer-7 $spacer-3 ;
+    @media(min-width:$md){
+        width: 65vw;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    
+}
+.cta-card-body{
+
+    padding: $spacer-2;
+    height: 100%;
+    display: grid;
+place-items: center;
+}
+.cta-card-text{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(5px);    
+    padding: $spacer-3;
+    border-radius: 8px; 
+    text-align: center;
+    max-width: 50ch;
+    p{
+        font-weight: 350;
+    }
+}
+///////////////////////
+/// Services Cards
+.service-card{
+    background-color: #fff;
+    border: 2px solid $tertiary;
+    border-radius: $border-radius;
+    padding: $spacer-3;
+ a{
+    display: block;
+    text-align: center;
+ }   
+}
+
+.service-card-title{
+    font-size: $fs-400;
+    font-weight: 100;
+}
+.service-card-service{
+    font-size: $fs-300;
+    font-weight: 300;
+}
+
+/////News cards
+/// similar to standard card but slight alterations
+.news-card{
+text-align: left;
+.card-header img{
+    height: 250px;
+}
+.card-body, .card-body-title{
+    text-align: left;
+}
+    .card-body-title{
+        margin-bottom: 0;
+    }
+}
+
+.news-card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
