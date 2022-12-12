@@ -1,5 +1,5 @@
 <footer>
-    <div class="container py-3">
+    <div class="container py-3 ">
         
         <div class="footer-grid">
         <h2 class="brand-font footer-brand my-2"><?=$business_name;?></h2>
@@ -31,7 +31,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-creator-brand">
+        <div class="footer-creator-brand my-3">
             <p class="footer-copyright">&copy; <?=$business_name; echo" ". date('Y')?> </p>
             <p>Website created by <a href="http://www.parrotmedia.co.uk" target="blank">Parrot Media</a></p>
         </div>

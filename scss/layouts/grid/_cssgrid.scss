@@ -44,6 +44,11 @@
     }
 }
 
+.stretch{
+    //stretch a grid item
+    place-self: start;
+    height: 100%;
+}
 
 .grid-auto{ //auto grid small columns
     display: grid;
@@ -51,3 +56,10 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+//Services layout grid, stretches adjacent images to fill up all space available
+.services-grid{
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}

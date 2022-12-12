@@ -35,7 +35,7 @@ include("connect.php");
                 <p class="text-center section-subtitle my-2">Some of our most popular Aesthetics treatments</p>
             <div class="container">
 
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box">
                         <p class="text-box-subtitle">Gain immediate and visible results</p>
                         <h3 class="text-box-title">Dermal Fillers</h3>
@@ -53,7 +53,7 @@ include("connect.php");
                     
                 </div>
 
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box grid-col-2-md">
                         <p class="text-box-subtitle">reduce visible signs of aging, fine lines & wrinkles</p>
                         <h3 class="text-box-title">Anti Wrinkle Treatments</h3>
@@ -70,7 +70,7 @@ include("connect.php");
                         <img class="border-std grid-col-1-md" src="./assets/img/services/aesthetics.jpg" alt="">
                     
                 </div>
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box">
                         <p class="text-box-subtitle">Increase energy levels and concentration!</p>
                         <h3 class="text-box-title">Vitamin B12</h3>
@@ -86,7 +86,7 @@ include("connect.php");
                         <img class="border-std" src="./assets/img/services/aesthetics.jpg" alt="">
                     
                 </div>
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box grid-col-2-md">
                         <p class="text-box-subtitle">Improve your skin tone</p>
                         <h3 class="text-box-title">Skin Peel</h3>
@@ -103,7 +103,7 @@ include("connect.php");
                         <img class="border-std grid-col-1-md" src="./assets/img/services/aesthetics.jpg" alt="">
                     
                 </div>
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box">
                         <p class="text-box-subtitle">Reduce the appearance of your skin straight away!</p>
                         <h3 class="text-box-title">Micro Needling</h3>
@@ -120,7 +120,7 @@ include("connect.php");
                         <img class="border-std" src="./assets/img/services/aesthetics.jpg" alt="">
                     
                 </div>
-                <div class="grid-row-2col my-3">
+                <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box grid-col-2-md">
                         <p class="text-box-subtitle">Repair and rejuvinate your skin!</p>
                         <h3 class="text-box-title">Steam Induction and Light Therapy</h3>

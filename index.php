@@ -36,7 +36,7 @@ $reviews_result_num = $reviews->num_rows;
                 <a style="display:inline-block;background-color: #04ad84;margin:0;padding:15px 30px;border-radius:5px;color:#fff;text-transform:uppercase;text-align:center;line-height:1;" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Lashes Brows & Aesthetics</a>
                     <h1>Pamper Yourself!</h1>
                     <p>Transform your look with our amazing Eyelash, Eyebrow and Aesthetics treatments.</p>
-                    <a class="btn-primary btn-cta my-3" href="">Book Now</a>
+                    <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                 </div>
                 <img src="./assets/img/icons/arrow-down.svg" alt="" class="hero-arrow">
             </div>
@@ -111,7 +111,7 @@ $reviews_result_num = $reviews->num_rows;
                 </div>
             </div>
         </section>
-        <div class="section-divider my-3">
+        <div class="section-divider">
             <img src="./assets/img/icons/flower.svg" alt="">
         </div>
         <section class="my-3">
@@ -153,7 +153,7 @@ $reviews_result_num = $reviews->num_rows;
                 </div>
             </div>
         </section>
-        <div class="section-divider my-3">
+        <div class="section-divider">
             <img src="./assets/img/icons/flower.svg" alt="">
         </div>
 
@@ -203,7 +203,7 @@ $reviews_result_num = $reviews->num_rows;
 
 
         </section>
-        <div class="section-divider my-3">
+        <div class="section-divider">
             <img src="./assets/img/icons/flower.svg" alt="">
         </div>
         <section class="">
@@ -243,7 +243,7 @@ $reviews_result_num = $reviews->num_rows;
             </div>
 
         </section>
-        <section class="my-4">
+        <section>
             <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJReBlEir510cRYIV3Yjs3hbk&key=AIzaSyD5e7plvKHapsDIODrl6JJ-j3qXvxPtw9Y">
             </iframe>
         </section>

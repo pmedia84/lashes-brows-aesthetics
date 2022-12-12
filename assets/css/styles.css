@@ -251,7 +251,7 @@ select{
 } 
 .card-body{
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
 } 
 .card-body .card-body-title{
         color: hsl(4, 24%, 40%);
@@ -500,6 +500,10 @@ text-align: left;
 /*standard text box with styles to draw out details. used on services pages*/ 
 .text-box{
     padding: 0.5rem;
+    border: 1px solid hsl(39, 40%, 57%);
+    border-radius: 5px;
+    height: 100%;
+    padding: 1.5rem;
 } 
 .text-box-title{
     color: hsl(4, 24%, 40%);
@@ -855,7 +859,7 @@ footer .footer-brand {
 .section-divider{
     width: max-content;
     margin: 0 auto;
-    margin-block: 1.5rem;
+    margin-block: 2rem;
 } 
 /*remove settings if the browser does not support a parallax scroll*/ 
 @supports(background-attachment: fixed){
@@ -947,11 +951,21 @@ footer .footer-brand {
         grid-row: 1/2;
     }
 } 
+.stretch{
+    /*stretch a grid item*/
+    place-self: start;
+    height: 100%;
+} 
 .grid-auto{ /*auto grid small columns*/
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 } 
+/*Services layout grid, stretches adjacent images to fill up all space available*/ 
+.services-grid img{
+        height: 100%;
+        object-fit: cover;
+    } 
 .container-fluid,
 .container{
     width: 100%;

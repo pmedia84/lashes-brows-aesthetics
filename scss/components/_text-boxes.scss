@@ -1,6 +1,10 @@
 //standard text box with styles to draw out details. used on services pages
 .text-box{
     padding: $spacer-2;
+    border: 1px solid $tertiary;
+    border-radius: $border-radius;
+    height: 100%;
+    padding: $spacer-3;
 }
 .text-box-title{
     color: $secondary;
