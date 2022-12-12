@@ -16,7 +16,7 @@
     <meta name="theme-color" content="black" />
     <!-- OG Meta Tags -->
     <meta property="og:title" content="<?=$business_name;?>">
-    <meta property="og:description" content="Window and gutter cleaning services for Cambridgeshire and Norfolk">
+    <meta property="og:description" content="Lashes Brows & Aesthetics in Sutton Bridge">
     <meta property="og:image" content="./assets/img/og-data/og-img.png">
     <meta property="og:url" content="">
     <meta property="og:type" content="Website">
