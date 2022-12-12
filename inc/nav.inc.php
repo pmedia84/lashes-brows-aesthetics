@@ -9,7 +9,7 @@
                 <li><a class="nav-links-item" href="index">Home</a></li>
                 <li><a class="nav-links-item" href="aesthetics_treatments">Aesthetics</a></li>
                 <li><a class="nav-links-item" href="lashes_and_brows">Lashes & Brows</a></li>
-                <li><a class="nav-links-item" href="contact">Contact</a></li>
+                <!-- <li><a class="nav-links-item" href="contact">Contact</a></li> -->
                 <li><a class="nav-links-item" href="about">About Us</a></li>
                 <!-- <li><a class="nav-links-item" href="prices">Price List</a></li> -->
             </ul>
