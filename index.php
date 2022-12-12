@@ -33,6 +33,7 @@ $reviews_result_num = $reviews->num_rows;
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-text">
+                <a style="display:inline-block;background-color: #04ad84;margin:0;padding:15px 30px;border-radius:5px;color:#fff;text-transform:uppercase;text-align:center;line-height:1;" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Lashes Brows & Aesthetics</a>
                     <h1>Pamper Yourself!</h1>
                     <p>Transform your look with our amazing Eyelash, Eyebrow and Aesthetics treatments.</p>
                     <a class="btn-primary btn-cta my-3" href="">Book Now</a>
