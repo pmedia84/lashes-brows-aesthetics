@@ -33,9 +33,9 @@ $reviews_result_num = $reviews->num_rows;
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-text">
-                <a style="display:inline-block;background-color: #04ad84;margin:0;padding:15px 30px;border-radius:5px;color:#fff;text-transform:uppercase;text-align:center;line-height:1;" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Lashes Brows & Aesthetics</a>
-                    <h1>Pamper Yourself!</h1>
-                    <p>Transform your look with our amazing Eyelash, Eyebrow and Aesthetics treatments.</p>
+                
+                    <h1>Indulge Yourself!</h1>
+                    <p>Transform your look with my amazing Eyelash, Eyebrow and Aesthetics treatments.</p>
                     <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                 </div>
                 <img src="./assets/img/icons/arrow-down.svg" alt="" class="hero-arrow">
@@ -51,30 +51,30 @@ $reviews_result_num = $reviews->num_rows;
                     <div class="card-body">
                         <h3 class="card-body-title">Aesthetics</h3>
                         <p>Aesthetics are becoming a main part of the Beauty Industry, and I’m pleased to say that I’m fully trained and qualified to be able to offer it all to my clients. I’m also trained in complications, first aid and body dysmorphia , so I won’t let you go out looking like the bride of Frankenstein!</p>
-                        <a class="my-2" href="">Find Out More</a><br>
-                        <a class="btn-primary" href="">Book Now</a>
+                        <a class="my-2" href="aesthetics_treatments">Find Out More</a><br>
+                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="./assets/img/services/aesthetics.jpg" alt="">
+                        <img src="./assets/img/services/lashes.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
                         <p>From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natrual lash, giving a fuller, darker efffect.</p>
-                        <a class="my-2" href="">Find Out More</a><br>
-                        <a class="btn-primary" href="">Book Now</a>
+                        <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
+                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                     </div>
                 </div>
                 <div class="card span">
                     <div class="card-header">
-                        <img src="./assets/img/services/aesthetics.jpg" alt="">
+                        <img src="./assets/img/services/brows.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
                         <p>From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
-                        <a class="my-2" href="">Find Out More</a><br>
-                        <a class="btn-primary" href="">Book Now</a>
+                        <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
+                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@ $reviews_result_num = $reviews->num_rows;
                         <div class="profile-card-body">
                             <h3 class="my-2">My Story</h3>
                             <p>My journey started in the Eyelash Industry in 2011, when I decided to take a course in Classic Lash Extensions at Pinewood TV Studios with the Award Winning Eyelash Emporium</p>
-                            <a href="">More...</a>
+                            <a href="about">More...</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ $reviews_result_num = $reviews->num_rows;
                     <div class="profile-card">
 
                         <div class="profile-card-body">
-                            <h4 class="my-2">Qualfications</h4>
+                            <h4 class="my-2">Qualifications</h4>
                             <p>I am always training to give you the best level of professionalism that I take pride in. Keeping up to date is very important for me and ensures that you have the very best quality of treatments.</p>
                             <ul>
                                 <li>Aesthetics</li>
@@ -121,7 +121,7 @@ $reviews_result_num = $reviews->num_rows;
                     <div class="cta-card-text">
                         <h2 class="my-2">50% Off Micro Needling</h2>
                         <p>Extra discount when booking appointments through our website and paid for in full.*</p>
-                        <a href="" class="btn-primary my-2">Book Now</a>
+                        <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@ $reviews_result_num = $reviews->num_rows;
 
         <section class="bg-primary py-4">
             <div class="container">
-                <h2 class="section-title text-center bg-title reviews my-3">What our clients are saying</h2>
+                <h2 class="section-title text-center bg-title reviews my-3">What my clients are saying</h2>
 
                 <div class="slider review-slider">
                     <?php 

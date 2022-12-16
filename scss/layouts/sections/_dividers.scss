@@ -4,8 +4,15 @@
     margin-block: $spacer-4;
 }
 
+.parallax-bg{
+    min-height: 65vh;
+    background-image: url("../../assets/img/gallery/salon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-
+@media(min-width: $md){
 //remove settings if the browser does not support a parallax scroll
 @supports(background-attachment: fixed){
     .parallax-bg{
@@ -17,3 +24,7 @@
         background-size: cover;
     }
 }
+}
+
+
+

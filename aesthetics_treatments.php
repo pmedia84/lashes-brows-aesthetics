@@ -20,14 +20,13 @@ include("connect.php");
     <?php include("inc/nav.inc.php"); ?>
     <!-- Hero -->
     <main>
-        <section class="hero">
+        <section class="hero std-hero">
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1>Aesthetics Treatments</h1>
                     <p>Amaze yourself with our Treatments</p>
                     <a class="btn-primary btn-cta my-3" href="">Book Now</a>
                 </div>
-                <img  src="./assets/img/icons/arrow-down.svg" alt="" class="hero-arrow">
             </div>
         </section>
         <section class="">

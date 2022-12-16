@@ -7,8 +7,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     .hero-arrow{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         width: auto;
         margin: 0 auto;
         margin-bottom: 1rem;
@@ -39,4 +43,8 @@
 .hero-text{
     place-self: center;
     text-align: center;
+}
+
+.std-hero{//standard hero for all other pages
+    min-height: 50vh;
 }

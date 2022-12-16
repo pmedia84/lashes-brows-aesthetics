@@ -1,0 +1,46 @@
+.price-hero{
+    background-image: url("../../assets/img/hero/price-hero.jpg");
+   
+}
+
+//price list with border and styles
+.price-list{
+    border: 2px solid $tertiary;
+    border-radius: $border-radius;
+    padding: $spacer-3;
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    h3{
+        font-size: $fs-500;
+        border-bottom: 2px solid $tertiary;
+    }
+    @media(min-width:$md){
+        width: 70%;
+    }
+
+}
+
+.price-list-item{
+    padding-block: $spacer-1;
+    border-bottom: 2px dotted $tertiary;
+    h4{
+        font-family:$body-ff;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: 500;
+    }
+}
+.price-list-controls{
+    width: 80%;
+    margin: 0 auto;
+    background-color: $primary-1000;
+    border-radius: $border-radius;
+    padding: $spacer-2;
+    @media(min-width: $md){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

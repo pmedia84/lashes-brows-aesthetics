@@ -16,7 +16,7 @@
             <div class="footer-contact-details">
                 <ul>
                     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:<?=$business_email;?>"><?=$business_email;?></a></li>
-                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+<?=$business_phone;?>"><?=$business_phone;?></a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:<?=$business_phone;?>"><?=$business_phone;?></a></li>
                 </ul>
             
             </div>
