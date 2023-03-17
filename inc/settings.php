@@ -42,6 +42,6 @@ $socials_result_num = $socials->num_rows;
 
 //News articles 
 //set up a default image if no image has been chosen when the article was made
-$article_default_img = "news-item.jpg";
+$article_default_img = "news-item.webp";
 ?>
 

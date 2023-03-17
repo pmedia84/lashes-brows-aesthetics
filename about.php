@@ -28,7 +28,6 @@ include("connect.php");
                     <h1>About Me</h1>
                     <a class="btn-primary btn-cta my-3" href="">Book Now</a>
                 </div>
-                <img src="./assets/img/icons/arrow-down.svg" alt="" class="hero-arrow">
             </div>
         </section>
         <section class="">

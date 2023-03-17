@@ -9,13 +9,23 @@
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     width: 100%;
-    object-fit: cover;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: bottom;
 }
-
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .card-body{
     text-align: center;
-    padding: $spacer-4;
+    padding: $spacer-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 100;
     .card-body-title{
         color: $secondary;
         font-size: $fs-400;
@@ -31,7 +41,7 @@
     display: grid;
     gap: $spacer-3;
     @media(min-width:$md){
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
 }

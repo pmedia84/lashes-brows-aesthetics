@@ -32,13 +32,10 @@ include("connect.php");
             <p class="text-center section-subtitle my-3">All my services are listed here, if there is something you can't find then please get in touch.</p>
             <div class="container price-list-controls my-3 ">
                 <form action="scripts/price_list.script.php" method="POST" id="price_list_search">
-
                     <div class="form-input-wrapper my-3">
                         <div class="search-input">
-
                             <input type="text" id="search" name="search" placeholder="Search For A Service ...">
                             <button class="btn-primary form-controls-btn loading-btn" type="submit"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
-
                         </div>
                     </div>
                 </form>
@@ -46,14 +43,14 @@ include("connect.php");
 
                     <div class="form-input-wrapper">
                         <label for="user_email">Filter By Category</label>
-                        <select class="form-select" name="search" id="search_filter">
-                            <option value="" selected>Select a category...</option>
+                        <select class="form-select" name="service_cat_id" id="search_filter">
+                            <option value="" selected>View All</option>
                             <?php
                             $categories_query = ('SELECT * FROM services_categories');
                             $categories = $db->query($categories_query);
                             ?>
                             <?php foreach ($categories as $category) : ?>
-                                <option value="<?= $category['service_cat_name']; ?>"><?= $category['service_cat_name']; ?></option>
+                                <option value="<?= $category['service_cat_id']; ?>"><?= $category['service_cat_name']; ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>

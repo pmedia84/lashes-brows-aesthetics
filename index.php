@@ -9,6 +9,8 @@ $news = $db->query($news_query);
 $reviews_query = ('SELECT * FROM reviews ORDER BY reviews_date_time DESC');
 $reviews = $db->query($reviews_query);
 $reviews_result_num = $reviews->num_rows;
+//load featured featured services
+$services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"');
 
 ?>
 <!DOCTYPE html>
@@ -33,20 +35,20 @@ $reviews_result_num = $reviews->num_rows;
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-text">
-                
+
                     <h1>Indulge Yourself!</h1>
-                    <p>Transform your look with my amazing Eyelash, Eyebrow and Aesthetics treatments.</p>
+                    <p>My aim is to make you look and feel more youthful without the need for surgery </p>
                     <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                 </div>
-                <img src="./assets/img/icons/arrow-down.svg" alt="" class="hero-arrow">
+
             </div>
         </section>
         <section class="bg-primary py-4">
             <h2 class="section-title text-center bg-title services my-3">You Deserve To Be Pampered</h2>
-            <div class="container cards-grid-3">
+            <div class="container grid-row-3col">
                 <div class="card">
                     <div class="card-header">
-                        <img src="./assets/img/services/aesthetics.jpg" alt="">
+                        <img src="./assets/img/services/lip-filler.webp" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Aesthetics</h3>
@@ -57,7 +59,7 @@ $reviews_result_num = $reviews->num_rows;
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="./assets/img/services/lashes.jpg" alt="">
+                        <img src="./assets/img/services/lashes.webp" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
@@ -68,7 +70,7 @@ $reviews_result_num = $reviews->num_rows;
                 </div>
                 <div class="card span">
                     <div class="card-header">
-                        <img src="./assets/img/services/brows.jpg" alt="">
+                        <img src="./assets/img/services/brows.webp" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
@@ -116,7 +118,6 @@ $reviews_result_num = $reviews->num_rows;
         </div>
         <section class="my-3">
             <div class="cta-card">
-                <!-- <img src="./assets/img/gallery/salon.jpg" alt=""> -->
                 <div class="cta-card-body">
                     <div class="cta-card-text">
                         <h2 class="my-2">50% Off Micro Needling</h2>
@@ -128,28 +129,21 @@ $reviews_result_num = $reviews->num_rows;
         </section>
         <section class="bg-primary py-4">
             <div class="container">
-                <h2 class="section-title text-center bg-title treatments my-3">Some Of Our Popular Treatments</h2>
-                <p class="text-center">This is a selection of our most popular treatments, you can find the full list on our services page <br><a href="">Services</a></p>
+                <h2 class="section-title text-center bg-title treatments my-3">Some Of My Popular Treatments</h2>
+                <p class="text-center">This is a selection of my most popular treatments, you can find the full list on my <a href="price_list">Price List</a> page.</p>
 
                 <div class="grid-row-3col py-4">
-                    <div class="service-card">
-                        <h3 class="service-card-title my-2 text-center">Eyelash Extensions</h3>
-                        <p class="service-card-service my-2 text-center">Classic Lashes</p>
-                        <p class="service-card-price my-2 text-center">£40.00</p>
-                        <a href="" class="btn-primary my-2">Book Now</a>
-                    </div>
-                    <div class="service-card">
-                        <h3 class="service-card-title my-2 text-center">Brows</h3>
-                        <p class="service-card-service my-2 text-center">Brow Lamination</p>
-                        <p class="service-card-price my-2 text-center">£30.00</p>
-                        <a href="" class="btn-primary my-2">Book Now</a>
-                    </div>
-                    <div class="service-card">
-                        <h3 class="service-card-title my-2 text-center">Aesthetics</h3>
-                        <p class="service-card-service my-2 text-center">Revolax Filler</p>
-                        <p class="service-card-price my-2 text-center">£75.00</p>
-                        <a href="" class="btn-primary my-2">Book Now</a>
-                    </div>
+                    <?php if ($services_f_q->num_rows > 0) :
+                        foreach ($services_f_q as $service) : ?>
+                            <div class="service-card">
+                                <h3 class="service-card-title my-2 text-center"><?= html_entity_decode($service['service_name']) ;?></h3>
+                                <p class="service-card-service my-2 text-center"><?= html_entity_decode($service['service_description']) ;?></p>
+                                <p class="service-card-price my-2 text-center">&pound;<?=$service['service_price'];?></p>
+                                <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
+                            </div>
+                    <?php endforeach;
+                    endif; ?>
+
                 </div>
             </div>
         </section>
@@ -162,42 +156,42 @@ $reviews_result_num = $reviews->num_rows;
                 <h2 class="section-title text-center bg-title reviews my-3">What my clients are saying</h2>
 
                 <div class="slider review-slider">
-                    <?php 
-                    if($reviews_result_num >=1):
-                    foreach($reviews as $review):
-                            ?>
-                        <div class="review-slider-review">
-                            <div class="review-body">
-                            
-                                <div class="review-slider-body">
-                                    <a href="<?=$review['reviews_author_url']; ?>" target = blank>
-                                        <h3><?=$review['reviews_author_name']; ?></h3>
-                                    </a>
-                                    <div class="stars">
-                                        <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 1) {
-                                                                            echo "star-color-rated";
-                                                                        } ?>"></i>
-                                        <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 2) {
-                                                                            echo "star-color-rated";
-                                                                        } ?>"></i>
-                                        <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 3) {
-                                                                            echo "star-color-rated";
-                                                                        } ?>"></i>
-                                        <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 4) {
-                                                                            echo "star-color-rated";
-                                                                        } ?>"></i>
-                                        <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 5) {
-                                                                            echo "star-color-rated";
-                                                                        } ?>"></i> 
-                                        <span class="review-slider-review-time"><?= $review['reviews_relative_time_description']; ?></span>
+                    <?php
+                    if ($reviews_result_num >= 1) :
+                        foreach ($reviews as $review) :
+                    ?>
+                            <div class="review-slider-review">
+                                <div class="review-body">
+
+                                    <div class="review-slider-body">
+                                        <a href="<?= $review['reviews_author_url']; ?>" target=blank>
+                                            <h3><?= $review['reviews_author_name']; ?></h3>
+                                        </a>
+                                        <div class="stars">
+                                            <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 1) {
+                                                                                echo "star-color-rated";
+                                                                            } ?>"></i>
+                                            <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 2) {
+                                                                                echo "star-color-rated";
+                                                                            } ?>"></i>
+                                            <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 3) {
+                                                                                echo "star-color-rated";
+                                                                            } ?>"></i>
+                                            <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 4) {
+                                                                                echo "star-color-rated";
+                                                                            } ?>"></i>
+                                            <i class="fa fa-star star-color <?php if ($review['reviews_rating'] >= 5) {
+                                                                                echo "star-color-rated";
+                                                                            } ?>"></i>
+                                            <span class="review-slider-review-time"><?= $review['reviews_relative_time_description']; ?></span>
+                                        </div>
+                                        <p><?= $review['reviews_text']; ?></p>
                                     </div>
-                                    <p><?= $review['reviews_text']; ?></p>
                                 </div>
                             </div>
-                        </div>
-                <?php endforeach;
-                        endif;
-                ?>
+                    <?php endforeach;
+                    endif;
+                    ?>
                 </div>
             </div>
 
@@ -215,19 +209,19 @@ $reviews_result_num = $reviews->num_rows;
 
                         <?php foreach ($news as $article) :
                             $news_article_body = html_entity_decode($article['news_articles_body']);
-                            $news_articles_date = strtotime($article['news_articles_date']); 
-                            if($article['news_articles_img']==""){
+                            $news_articles_date = strtotime($article['news_articles_date']);
+                            if ($article['news_articles_img'] == "") {
                                 $article_img = $article_default_img;
-                            } else{
+                            } else {
                                 $article_img = $article['news_articles_img'];
-                            }?>
-                            
+                            } ?>
+
                             <div class="card news-card">
                                 <div class="card-header">
-                                    <img src="../admin/assets/img/news/<?=$article_img;?>" alt="">
+                                    <img src="../admin/assets/img/news/<?= $article_img; ?>" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-body-title"><?=$article['news_articles_title'];?></h3>
+                                    <h3 class="card-body-title"><?= $article['news_articles_title']; ?></h3>
                                     <div class="news-card-text">
                                         <?= $news_article_body; ?>
 
