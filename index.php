@@ -200,7 +200,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
         <div class="section-divider">
             <img src="./assets/img/icons/flower.svg" alt="">
         </div>
-        <section class="">
+        <section class="my-3">
             <div class="container">
                 <h2 class="section-title text-center bg-title news my-3">Latest News & Offers</h2>
                 <div class="grid-auto">
@@ -221,14 +221,16 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                                     <img src="../admin/assets/img/news/<?= $article_img; ?>" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-body-title"><?= $article['news_articles_title']; ?></h3>
+                                    <a href="post?article_id=<?=$article['news_articles_id'];?>">
+                                        <h3 class="card-body-title"><?= $article['news_articles_title']; ?></h3>
+                                    </a>
                                     <div class="news-card-text">
                                         <?= $news_article_body; ?>
 
                                     </div>
 
 
-                                    <a class="my-2" href="">Read More</a><br>
+                                    <a class="my-2" href="post?article_id=<?=$article['news_articles_id'];?>">Read More</a><br>
                                 </div>
                             </div>
                         <?php endforeach; ?>

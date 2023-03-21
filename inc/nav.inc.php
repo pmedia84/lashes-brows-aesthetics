@@ -6,12 +6,13 @@
     <div class="nav-banner">
         <div class="nav-menu" id="nav-menu">
             <ul class="nav-links">
-                <li><a class="nav-links-item" href="index">Home</a></li>
-                <li><a class="nav-links-item" href="price_list">Price List</a></li>
-                <li><a class="nav-links-item" href="aesthetics_treatments">Aesthetics</a></li>
-                <li><a class="nav-links-item" href="lashes_and_brows">Lashes & Brows</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "index")){echo"link-active";}?>" href="index">Home</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "price_list")){echo"link-active";}?>" href="price_list">Price List</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "aesthetics")){echo"link-active";}?>" href="aesthetics_treatments">Aesthetics</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "lashes")){echo"link-active";}?>" href="lashes_and_brows">Lashes & Brows</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "news")){echo"link-active";}?>" href="news">News</a></li>
                 <!-- <li><a class="nav-links-item" href="contact">Contact</a></li> -->
-                <li><a class="nav-links-item" href="about">About Me</a></li>
+                <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "about")){echo"link-active";}?>" href="about">About Me</a></li>
                 
             </ul>
         </div>

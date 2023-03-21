@@ -599,9 +599,25 @@ place-items: center;
 /*/ similar to standard card but slight alterations*/ 
 .news-card{
 text-align: left;
+background-color: hsl(6, 83%, 97%);
+border: 1px solid hsl(39, 40%, 57%);
 } 
-.news-card .card-header img{
+.news-card .card-header{
+    border-radius: inherit;
+} 
+.news-card .card-header a{
     height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+} 
+.news-card a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 } 
 .news-card .card-body, .news-card .card-body-title{
     text-align: left;
@@ -766,6 +782,51 @@ text-align: left;
     color: hsl(4, 24%, 40%);
     font-size: 1rem;
     border-radius: 5px;
+} 
+.pagination{
+    width: min-content;
+    margin-inline: auto;
+    padding: 0;
+    display: flex;
+} 
+.pagination li{
+        border: 1px solid hsl(6, 83%, 90%);
+        display: grid;
+        place-items: center;
+        transition: background-color 300ms ease-out;
+    } 
+.pagination li:hover{
+            background-color: hsl(6, 83%, 80%);
+            transition: background-color 300ms ease-out;
+        } 
+.pagination li:first-of-type{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    } 
+.pagination li:last-of-type{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    } 
+.pagination a{
+        padding: .5rem .75rem;
+        text-decoration: none;
+        transition: background-color 300ms ease-out;
+        border-radius: inherit;
+        font-size: 1rem;
+    
+    } 
+.pagination a:hover{
+            background-color: hsl(6, 83%, 80%);
+            transition: background-color 300ms ease-out;
+        } 
+.dots{
+    display: grid;
+    place-items: center;
+    min-width: 30px;
+} 
+.currentpage{
+    background-color: hsl(6, 83%, 95%);
+    color: hsl(6, 83%, 97%);
 } 
 .nav-container {
     /*nav container fixed to top of website*/
@@ -1351,6 +1412,23 @@ footer .footer-brand {
     } 
 .lashes-hero{
     background-image: url("../../assets/img/hero/lashes-hero.jpg");
+} 
+.post-hero, .post-body{
+    width: 90%;
+    margin-inline: auto;
+} 
+.post-hero h1,.post-body h1{
+        color: rgb(54, 54, 54);
+    } 
+@media(min-width: 768px){
+    .post-hero, .post-body{
+        width: 80%;
+        max-width: 800px;
+    }
+} 
+.post-body{
+    border: 2px solid hsl(6, 83%, 95%);
+    padding: 1.5rem;
 } 
 /*spacing utilities*/ 
 /*m = margin*/ 

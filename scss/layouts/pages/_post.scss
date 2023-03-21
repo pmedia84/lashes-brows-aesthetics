@@ -1,0 +1,17 @@
+.post-hero, .post-body{
+    width: 90%;
+    margin-inline: auto;
+    h1{
+        color: rgb(54, 54, 54);
+    }
+}
+@media(min-width: $md){
+    .post-hero, .post-body{
+        width: 80%;
+        max-width: 800px;
+    }
+}
+.post-body{
+    border: 2px solid $primary;
+    padding: $spacer-3;
+}

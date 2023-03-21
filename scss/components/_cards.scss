@@ -137,8 +137,24 @@ place-items: center;
 /// similar to standard card but slight alterations
 .news-card{
 text-align: left;
-.card-header img{
+background-color: $primary-1000;
+border: 1px solid $tertiary;
+.card-header{
+    border-radius: inherit;
+}
+.card-header a{
     height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .card-body, .card-body-title{
     text-align: left;

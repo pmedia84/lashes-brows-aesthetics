@@ -68,7 +68,7 @@ include("connect.php");
 
                     </div>
 
-                    <img class="border-std grid-col-1-md" src="./assets/img/services/aesthetics.jpg" alt="">
+                    <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
                 <div class="grid-row-2col my-3 services-grid">
@@ -84,7 +84,7 @@ include("connect.php");
 
                     </div>
 
-                    <img class="border-std" src="./assets/img/services/aesthetics.jpg" alt="">
+                    <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
                 <div class="grid-row-2col my-3 services-grid">
@@ -101,7 +101,7 @@ include("connect.php");
 
                     </div>
 
-                    <img class="border-std grid-col-1-md" src="./assets/img/services/aesthetics.jpg" alt="">
+                    <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
                 <div class="grid-row-2col my-3 services-grid">
@@ -118,7 +118,7 @@ include("connect.php");
 
                     </div>
 
-                    <img class="border-std" src="./assets/img/services/aesthetics.jpg" alt="">
+                    <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
                 <div class="grid-row-2col my-3 services-grid">
@@ -136,7 +136,7 @@ include("connect.php");
 
                     </div>
 
-                    <img class="border-std grid-col-1-md" src="./assets/img/services/aesthetics.jpg" alt="">
+                    <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
             </div>
