@@ -23,7 +23,7 @@ $news_q = $db->query('SELECT * FROM news_articles  ORDER BY news_articles_id LIM
     <?php include("inc/nav.inc.php"); ?>
     <!-- Hero -->
     <main>
-        <section class="hero std-hero post-hero" style="background-image:url('assets/img/news/<?php if ($article_r['news_articles_img'] ==""){echo "news-item.webp";} else{echo $article['news_articles_img'];}?>');">
+        <section class="hero std-hero post-hero" style="background-image:url('assets/img/news/<?php if ($article_r['news_articles_img'] ==""){echo "news-item.webp";} else{echo $article_r['news_articles_img'];}?>');">
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1><?= $article_r['news_articles_title']; ?></h1>
