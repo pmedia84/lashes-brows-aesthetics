@@ -12,7 +12,7 @@ include("connect.php");
     <title>Aesthetics Treatments in Holbeach : Lashes Brows & Aesthetics</title>
 </head>
 <body itemscope itemtype="https://schema.org/BeautySalon">
-    <meta itemprop="serviceType" content="Aesthetics Treatments">
+    
     <!-- Nav Bar -->
     <?php include("inc/nav.inc.php"); ?>
     <!-- Hero -->
@@ -27,11 +27,12 @@ include("connect.php");
             </div>
         </section>
         <section class="">
-            <div class="container">
+        <meta itemprop="serviceType" content="Aesthetics Treatments">
+            <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <h2 class="section-title text-center mt-2">Outstanding Results</h2>
                 <p class="text-center section-subtitle my-2">Some of our most popular Aesthetics treatments</p>
             </div>
-            <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+            <div class="container" >
                 <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
                         <p class="text-box-subtitle">Gain immediate and visible results</p>
