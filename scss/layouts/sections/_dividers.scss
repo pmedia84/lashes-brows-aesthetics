@@ -6,7 +6,7 @@
 
 .parallax-bg{
     min-height: 65vh;
-    background-image: url("../../assets/img/gallery/salon.jpg");
+    background-image: url("../../assets/img/gallery/outside2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 @supports(background-attachment: fixed){
     .parallax-bg{
         min-height: 65vh;
-        background-image: url("../../assets/img/gallery/salon.jpg");
+        background-image: url("../../assets/img/gallery/outside2.webp");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

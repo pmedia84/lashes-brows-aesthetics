@@ -1,6 +1,6 @@
 <nav class="nav-container">
     <div class="nav-brand">
-        <img src="assets/img/logo/logo.png" alt="">
+        <img itemprop="logo" src="assets/img/logo/logo.png" alt="">
     </div>
 
     <div class="nav-banner">

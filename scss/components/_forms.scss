@@ -15,35 +15,6 @@
 
 //////
 
-//Quote request form
-.quote-request{
-    background-color: $secondary;
-    width: 100%;
-    h2, h3{
-     color: $primary;
-    } 
-    label{
-     color: #fff;
-    }
-     padding: 1rem;
-     border-radius: $border-radius;
-     flex-grow: 0.5;
-     .form-floating > label,input,textarea{
-         color: #212529;
-     }
-
-     textarea{
-         height: 120px !important;
-     }
-     @media(min-width: $md){
-         .form-col{
-             width: 100%;
-         }
-     }
-     .google-policy{
-        color: white;
-     }
- }
 
 //Recaptcha  settings
 .recaptcha-token{
@@ -84,7 +55,7 @@
 input{
     outline: none;
 }
-input[type=text], input[type=password], textarea, select, input[type=file]{
+input[type=text], input[type=password], textarea, select, input[type=file], input[type=email]{
     appearance: none;
     border: 1px solid $secondary;
     border-radius: 5px;

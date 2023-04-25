@@ -27,7 +27,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
     <title>Eyebrow extensions : Lashes Brows & Aesthetics</title>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/BeautySalon">
     <!-- Nav Bar -->
     <?php include("inc/nav.inc.php"); ?>
     <!-- Hero -->
@@ -36,15 +36,16 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
             <div class="container hero-grid">
                 <div class="hero-text">
 
-                    <h1>Indulge Yourself!</h1>
-                    <p>My aim is to make you look and feel more youthful without the need for surgery </p>
+                    <h1>Self care is not an expense ...</h1>
+                    <p class="hero-subtitle">It's an investment</p>
+                    <p itemprop="description">Look and feel more youthful without the need for surgery </p>
                     <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
                 </div>
 
             </div>
         </section>
         <section class="bg-primary py-4">
-            <h2 class="section-title text-center bg-title services my-3">You Deserve To Be Pampered</h2>
+            <h2 class="section-title text-center bg-title services my-3">If it makes you feel Beautiful... do it!</h2>
             <div class="container grid-row-3col">
                 <div class="card">
                     <div class="card-header">
@@ -84,7 +85,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
         <div class="parallax-bg">
         </div>
         <section class="bg-primary-1000 py-4">
-            <h2 class="section-title text-center bg-title about my-3">Mandi Saville</h2>
+            <h2 class="section-title text-center bg-title about my-3" itemprop="founder">Mandi Saville</h2>
             <div class="container grid-2col">
                 <div class="grid-col">
                     <div class="profile-card">

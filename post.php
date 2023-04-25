@@ -31,7 +31,6 @@ $news_q = $db->query('SELECT * FROM news_articles  ORDER BY news_articles_id LIM
             </div>
         </section>
     
-        
         <section class="post-body mb-2">
             <h2 class="section-title text-center my-3"><?= $article_r['news_articles_title']; ?></h2>
             <div class="">

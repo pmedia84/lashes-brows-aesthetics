@@ -152,7 +152,7 @@ a:hover{
 } 
 .btn-secondary{
     background-color: white;
-    color: hsl(6, 83%, 95%);
+    color: hsl(4, 24%, 40%);
 } 
 a.btn-primary{
     text-decoration: none;
@@ -192,36 +192,6 @@ a.btn-primary{
     }
 } 
 /*////*/ 
-/*Quote request form*/ 
-.quote-request{
-    background-color: hsl(4, 24%, 40%);
-    width: 100%;
- } 
-.quote-request h2, .quote-request h3{
-     color: hsl(6, 83%, 95%);
-    } 
-.quote-request label{
-     color: #fff;
-    } 
-.quote-request {
-     padding: 1rem;
-     border-radius: 5px;
-     flex-grow: 0.5;
-} 
-.quote-request .form-floating > label,.quote-request input,.quote-request textarea{
-         color: #212529;
-     } 
-.quote-request textarea{
-         height: 120px !important;
-     } 
-@media(min-width: 768px){
-         .quote-request .form-col{
-             width: 100%;
-         }
-     } 
-.quote-request .google-policy{
-        color: white;
-     } 
 /*Recaptcha  settings*/ 
 .recaptcha-token{
     display: none;
@@ -257,7 +227,7 @@ a.btn-primary{
 input{
     outline: none;
 } 
-input[type=text], input[type=password], textarea, select, input[type=file]{
+input[type=text], input[type=password], textarea, select, input[type=file], input[type=email]{
     -webkit-appearance: none;
             appearance: none;
     border: 1px solid hsl(4, 24%, 40%);
@@ -267,7 +237,7 @@ input[type=text], input[type=password], textarea, select, input[type=file]{
     margin-block: 0.25rem;
     
 } 
-input[type=text]:focus,input[type=password]:focus,textarea:focus,select:focus,input[type=file]:focus{
+input[type=text]:focus,input[type=password]:focus,textarea:focus,select:focus,input[type=file]:focus,input[type=email]:focus{
         box-shadow: 0 0 2px 3px hsl(4, 24%, 40%, 0.5);
         transition: box-shadow 300ms ease-out;
     } 
@@ -540,7 +510,7 @@ input[type="checkbox"]:focus {
 /*///////////*/ 
 /*/CTA CARDS with bg img and cover card full width*/ 
 .cta-card{
-    background-image: url("../../assets/img/gallery/salon.jpg");
+    background-image: url("../../assets/img/gallery/outside2.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -599,7 +569,7 @@ place-items: center;
 /*/ similar to standard card but slight alterations*/ 
 .news-card{
 text-align: left;
-background-color: hsl(6, 83%, 97%);
+background-color: hsl(6, 83%, 98%);
 border: 1px solid hsl(39, 40%, 57%);
 } 
 .news-card .card-header{
@@ -687,7 +657,7 @@ border: 1px solid hsl(39, 40%, 57%);
     position: fixed;
     bottom: 0.25rem;
     left: 0.25rem;
-    background: hsl(43, 45%, 80%);
+    background: hsl(6, 83%, 98%);
     padding: 2rem;
     z-index: 2051;
     font-size: 14px;
@@ -826,7 +796,36 @@ border: 1px solid hsl(39, 40%, 57%);
 } 
 .currentpage{
     background-color: hsl(6, 83%, 95%);
-    color: hsl(6, 83%, 97%);
+    color: hsl(6, 83%, 98%);
+} 
+.popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background-color: rgba(176, 176, 176, 0.607);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+} 
+.popup-body{
+    background-color: hsl(6, 83%, 98%);
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid hsl(39, 40%, 57%);
+    width: 100%;
+    max-width: 500px;
+} 
+.popup-body h2{
+        text-align: center;
+        font-size: 2.5rem;
+    } 
+.fa-ul .fa-li{
+    color: hsl(39, 40%, 57%);
 } 
 .nav-container {
     /*nav container fixed to top of website*/
@@ -1046,42 +1045,39 @@ border: 1px solid hsl(39, 40%, 57%);
 } 
 /*hero containers, basic one for all pages, padding to bring content down below the nav bar*/ 
 .hero{
-    padding-top: 160px;/*padding same height as nav bar*/
+    padding: 160px 0 7rem;/*padding same height as nav bar*/
     /*bg image*/
     position: relative;
-    background-image: url("../../assets/img/hero/hero.jpg");
+    background-image: url("../../assets/img/hero/hero.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 50vh;
+    color: hsl(39, 40%, 57%);
 } 
-.hero .hero-arrow{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: auto;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+.hero h1, .hero p{
+        text-shadow: 2px 2px 4px rgb(77, 77, 77);
     } 
-.hero h1{
+.hero h1, .hero .hero-subtitle{
         font-size:3.5rem;
-        color: #fff;
     } 
 @media(min-width:768px){ 
-.hero h1{
+.hero h1, .hero .hero-subtitle{
             font-size: 4rem
     }
         } 
 @media(min-width:992px){ 
-.hero h1{
+.hero h1, .hero .hero-subtitle{
             font-size: 5rem
     }
         } 
+.hero .hero-subtitle{
+        font-weight: 300;
+    } 
 .hero p{
         font-size: 1.5rem;
         font-weight: 400;
         color: rgb(242, 242, 242);
+        
     } 
 .hero-grid{/*grid to place items */
     height: 100%;
@@ -1093,13 +1089,14 @@ border: 1px solid hsl(39, 40%, 57%);
     place-self: center;
     text-align: center;
 } 
-.std-hero{/*standard hero for all other pages*/
-    min-height: 50vh;
-} 
-footer{
+footer h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color: hsl(4, 24%, 40%);
+    } 
+footer {
     background-color: hsl(6, 83%, 95%);
     min-height: 12vh;
-
 } 
 footer .footer-brand{
         letter-spacing: 0.25rem;
@@ -1144,11 +1141,6 @@ footer .footer-brand {
         padding: 0;
         list-style-type: none;
     } 
-.footer-socials h2{
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 400;
-        color: hsl(4, 24%, 40%);
-    } 
 /*/layout for larger screens*/ 
 .footer-grid{/*structure for footer*/
     display: grid;
@@ -1157,10 +1149,10 @@ footer .footer-brand {
 } 
 @media(min-width:992px){
     .footer-grid{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 .footer-brand{
-    grid-column:1/4 ;
+    grid-column:1/5 ;
 }
 } 
 .section-divider{
@@ -1170,7 +1162,7 @@ footer .footer-brand {
 } 
 .parallax-bg{
     min-height: 65vh;
-    background-image: url("../../assets/img/gallery/salon.jpg");
+    background-image: url("../../assets/img/gallery/outside2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1180,7 +1172,7 @@ footer .footer-brand {
 @supports(background-attachment: fixed){
     .parallax-bg{
         min-height: 65vh;
-        background-image: url("../../assets/img/gallery/salon.jpg");
+        background-image: url("../../assets/img/gallery/outside2.webp");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -1361,8 +1353,8 @@ footer .footer-brand {
 
 } 
 .price-hero{
-    background-image: url("../../assets/img/hero/price-hero.jpg");
-   
+    background-image: url("../../assets/img/hero/price-hero.webp");
+   background-position: center;
 } 
 /*price list with border and styles*/ 
 .price-list{
@@ -1399,7 +1391,7 @@ footer .footer-brand {
 .price-list-controls{
     width: 80%;
     margin: 0 auto;
-    background-color: hsl(6, 83%, 97%);
+    background-color: hsl(6, 83%, 98%);
     border-radius: 5px;
     padding: 0.5rem;
 } 
@@ -1484,7 +1476,7 @@ footer .footer-brand {
 } 
 .bg-primary-1000{
     /*lighter version of primary bg colour*/
-    background-color: hsl(6, 83%, 97%);
+    background-color: hsl(6, 83%, 98%);
 } 
 .bg-secondary{
     /*change bg to secondary col*/

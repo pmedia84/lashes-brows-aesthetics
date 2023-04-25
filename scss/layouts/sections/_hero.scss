@@ -1,25 +1,19 @@
 //hero containers, basic one for all pages, padding to bring content down below the nav bar
 .hero{
-    padding-top: $nav-height;//padding same height as nav bar
+    padding: $nav-height 0 7rem;//padding same height as nav bar
     //bg image
     position: relative;
-    background-image: url("../../assets/img/hero/hero.jpg");
+    background-image: url("../../assets/img/hero/hero.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 50vh;
-    .hero-arrow{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: auto;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+    color: $tertiary;
+    h1, p{
+        text-shadow: 2px 2px 4px rgb(77, 77, 77);
     }
-    h1{
+    h1, .hero-subtitle{
         font-size:$fs-800;
-        color: #fff;
+        
         @media(min-width:$md){
             font-size: $fs-900;
         }
@@ -27,10 +21,14 @@
             font-size: $fs-1000;
         }
     }
+    .hero-subtitle{
+        font-weight: 300;
+    }
     p{
         font-size: $fs-400;
         font-weight: 400;
         color: rgb(242, 242, 242);
+        
     }
 }
 
@@ -45,6 +43,3 @@
     text-align: center;
 }
 
-.std-hero{//standard hero for all other pages
-    min-height: 50vh;
-}

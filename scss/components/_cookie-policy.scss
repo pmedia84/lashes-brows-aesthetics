@@ -3,7 +3,7 @@
     position: fixed;
     bottom: $spacer-1;
     left: $spacer-1;
-    background: hsl(43, 45%, 80%);
+    background: $primary-1000;
     padding: 2rem;
     z-index: 2051;
     font-size: 14px;
@@ -23,7 +23,6 @@
       background-size: 1.5rem;
     }
 }
-
 .cookie-overlay-icon{
   display: grid;
   place-items: center;
@@ -39,10 +38,6 @@
     color: hsl(43, 49%, 25%);
    }
   }
-  
-    
-  
-
   .close-cookies, .accept-cookies{
     cursor: pointer;
   }
