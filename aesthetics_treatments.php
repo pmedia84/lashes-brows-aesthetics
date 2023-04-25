@@ -34,7 +34,7 @@ include("connect.php");
             </div>
             <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                    <div class="text-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
                         <p class="text-box-subtitle">Gain immediate and visible results</p>
                         <h3 class="text-box-title" itemprop="name">Dermal Fillers</h3>
 
@@ -43,7 +43,7 @@ include("connect.php");
                         </p><br>
                         <p class="text-box-text">I currently offer Signature Lips, Russian Lips, Nasolabial & Marionette Lines.</p>
                         <div class="text-box-price-card">
-                            <p>Starting From <span>&pound;145.00</span></p>
+                            <p>Starting From <span itemprop="price">&pound;145.00</span></p>
                         </div>
                         <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
 
@@ -52,9 +52,9 @@ include("connect.php");
                 </div>
 
                 <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box grid-col-2-md">
+                    <div class="text-box grid-col-2-md" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">>
                         <p class="text-box-subtitle">Reduces Visible Signs Of Aging, Fine Lines & Wrinkles</p>
-                        <h3 class="text-box-title">Anti Wrinkle Treatments</h3>
+                        <h3 class="text-box-title" itemprop="name">Anti Wrinkle Treatments</h3>
 
                         <p class="text-box-text">Depending on the areas treated, this can last from 3-12 months.</p>
 
