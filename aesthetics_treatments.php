@@ -34,7 +34,7 @@ include("connect.php");
             </div>
             <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+                    <div class="text-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                         <p class="text-box-subtitle">Gain immediate and visible results</p>
                         <h3 class="text-box-title" itemprop="name">Dermal Fillers</h3>
 
