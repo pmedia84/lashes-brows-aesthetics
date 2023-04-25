@@ -68,7 +68,7 @@ include("connect.php");
                     <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Increase energy levels and concentration!</p>
                         <h3 class="text-box-title" itemprop="name">Vitamin B12</h3>
@@ -93,10 +93,10 @@ include("connect.php");
                     <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box grid-col-2-md">
                         <p class="text-box-subtitle">Improve your skin tone</p>
-                        <h3 class="text-box-title">Skin Peel</h3>
+                        <h3 class="text-box-title" itemprop="name">Skin Peel</h3>
 
                         <p class="text-box-text">Tailored to your own skin type, they even out skin tone, lighten pigmented skin (age spots) acne, scarring, fine wrinkles and lines. After the peel, your skin grows back, producing more collagen and elastin, so starting to diminish the signs of ageing. <br> This treatment done together with Dermaplaning & Microneedling is so beneficial for your skin.</p>
 
@@ -110,10 +110,10 @@ include("connect.php");
                     <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Reduce the appearance of your skin straight away!</p>
-                        <h3 class="text-box-title">Micro Needling</h3>
+                        <h3 class="text-box-title" itemprop="name">Micro Needling</h3>
 
                         <p class="text-box-text">Also known as collagen induction therapy, it’s a treatment using a dermapen with a needle cartridge, this causes trauma to the skin, the process of healing starts straight away and renews the skin cells. As it repairs the skin produces collagen and elastin and this gives an immediate plumping effect. Again the benefits to this are amazing, reducing the appearance of fine lines and wrinkles, keloid scarring, sun damage, ageing, shrinks large pores, reduces rosacea and improves acne. </p><br>
                         <p class="text-box-text">The treatment continues to boost the appearance of your complexion, for months afterwards. For maximum results and improvement, this treatment is better done in a course of at least one every four weeks for three months.</p>
@@ -127,10 +127,10 @@ include("connect.php");
                     <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Reduce the appearance of your skin straight away!</p>
-                        <h3 class="text-box-title">Dermaplaning</h3>
+                        <h3 class="text-box-title" itemprop="name">Dermaplaning</h3>
 
                         <p class="text-box-text">Dermaplaning is a non-invasive cosmetic treatment that involves scraping off dead skin cells and peach fuzz with a scalpel to leave your face brighter and smoother.</p><br>
                         <p class="text-box-text">What are the benefits of Dermaplaning?</p>
@@ -152,10 +152,10 @@ include("connect.php");
                     <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Double Cleanse, Tone, Peel, Dermaplaning, Masque & Microneedling</p>
-                        <h3 class="text-box-title">LBAA Luxury Prescription Facial</h3>
+                        <h3 class="text-box-title" itemprop="name">LBAA Luxury Prescription Facial</h3>
 
                         <p class="text-box-text">Recommendation for maximum benefit are a course of 4-6 monthly treatments</p>
                         <div class="text-box-price-card">
@@ -168,10 +168,10 @@ include("connect.php");
                     <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Perfect if you don't want to look "over-filled"</p>
-                        <h3 class="text-box-title">Profhilo</h3>
+                        <h3 class="text-box-title" itemprop="name">Profhilo</h3>
 
                         <p class="text-box-text">Profhilo is the perfect choice for those who don’t necessarily want to look ‘over-filled’ but who would like to lift, tone and hydrate their skin appearance for a youthful, beautiful glow.</p><br>
                         <p class="text-box-text">After a course of Profhilo, you can expect to see a more hydrated, glowing and luminous complexion with an improved tone and texture with fewer lines and wrinkles. The skin will look and feel smoother and tighter.</p>
@@ -187,10 +187,10 @@ include("connect.php");
                     <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Boost your natural lashes!</p>
-                        <h3 class="text-box-title">Lash Lifting</h3>
+                        <h3 class="text-box-title" itemprop="name">Lash Lifting</h3>
 
                         <p class="text-box-text">The natural lashes are boosted from the root, giving them a lifted, lengthened appearance, without the need for extensions.</p>
                         <div class="text-box-price-card">
@@ -203,10 +203,10 @@ include("connect.php");
                     <img class="border-std" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Give your brows that ultimate flexibility!</p>
-                        <h3 class="text-box-title">Brow Lamination</h3>
+                        <h3 class="text-box-title" itemprop="name">Brow Lamination</h3>
 
                         <p class="text-box-text">Brow lamination involves straightening and lifting the hairs using a chemical solution, which allows the hairs to have more flexibility to move them into your desired shape, therefore covering any gaps or stray areas.</p><br>
 
