@@ -43,7 +43,7 @@ include("connect.php");
                         </p><br>
                         <p class="text-box-text">I currently offer Signature Lips, Russian Lips, Nasolabial & Marionette Lines.</p>
                         <div class="text-box-price-card">
-                            <p>Starting From <span >&pound;<span itemprop="price">145.00</span></span></p>
+                            <p>Starting From <span >&pound;145.00></span></p>
                         </div>
                         <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
 
@@ -68,10 +68,10 @@ include("connect.php");
                     <img class="border-std grid-col-1-md" src="./assets/img/services/lip-filler.webp" alt="">
 
                 </div>
-                <div class="grid-row-2col my-3 services-grid">
+                <div class="grid-row-2col my-3 services-grid" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box">
                         <p class="text-box-subtitle">Increase energy levels and concentration!</p>
-                        <h3 class="text-box-title">Vitamin B12</h3>
+                        <h3 class="text-box-title" itemprop="name">Vitamin B12</h3>
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Gives An Energy Boost</li>
                             <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Gives A Mood Boost</li>
