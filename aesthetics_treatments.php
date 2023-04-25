@@ -43,7 +43,7 @@ include("connect.php");
                         </p><br>
                         <p class="text-box-text">I currently offer Signature Lips, Russian Lips, Nasolabial & Marionette Lines.</p>
                         <div class="text-box-price-card">
-                            <p>Starting From <span itemprop="price">&pound;145.00</span></p>
+                            <p>Starting From <span >&pound;<span itemprop="price">145.00</span></span></p>
                         </div>
                         <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
 
