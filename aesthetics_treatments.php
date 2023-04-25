@@ -26,7 +26,7 @@ include("connect.php");
                 </div>
             </div>
         </section>
-        <section class="">
+        <section class=""itemscope itemtype="https://schema.org/Service">
         <meta itemprop="serviceType" content="Aesthetics Treatments">
             <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <h2 class="section-title text-center mt-2">Outstanding Results</h2>
