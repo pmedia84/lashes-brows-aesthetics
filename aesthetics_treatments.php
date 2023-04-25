@@ -28,11 +28,11 @@ include("connect.php");
         </section>
         <section class=""itemscope itemtype="https://schema.org/Service">
         <meta itemprop="serviceType" content="Aesthetics Treatments">
-            <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+            <div class="container" >
                 <h2 class="section-title text-center mt-2">Outstanding Results</h2>
                 <p class="text-center section-subtitle my-2">Some of our most popular Aesthetics treatments</p>
             </div>
-            <div class="container" >
+            <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <div class="grid-row-2col my-3 services-grid">
                     <div class="text-box" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
                         <p class="text-box-subtitle">Gain immediate and visible results</p>
