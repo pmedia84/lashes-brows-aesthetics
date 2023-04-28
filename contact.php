@@ -66,14 +66,15 @@ include("connect.php");
                     <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
                     <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
                 </div>
+                <div class="response d-none">
+                <p id="response-msg"></p>
+            </div>
             </div>
             <div class="map">
                 <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJReBlEir510cRYIV3Yjs3hbk&key=AIzaSyD5e7plvKHapsDIODrl6JJ-j3qXvxPtw9Y">
                 </iframe>
             </div>
-            <div class="response d-none">
-                <p id="response-msg"></p>
-            </div>
+
 
         </section>
     </main>
