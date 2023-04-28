@@ -3,11 +3,11 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/phpmailer/src/Exception.php';
-require '../vendor/PHPMailer/src/PHPMailer.php';
-require '../vendor/PHPMailer/src/SMTP.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/phpmailer/src/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/phpmailer/src/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/phpmailer/src/SMTP.php';
 //Load Composer's autoloader
-require '../vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 // check request type is post
 //prevent anyone browsing to this script page via a GET request.
 if ($_SERVER['REQUEST_METHOD'] != "POST") {
