@@ -27,10 +27,10 @@ include("connect.php");
                 </div>
             </div>
         </section>
-        <section class="">
+        <section class="container">
             <h2 class="section-title text-center bg-title my-3">Price List</h2>
             <p class="text-center section-subtitle my-3">All my services are listed here, if there is something you can't find then please get in touch.</p>
-            <div class="container price-list-controls my-3 ">
+            <div class="actions-card price-list-controls my-3 ">
                 <form action="scripts/price_list.script.php" method="POST" id="price_list_search">
                     <div class="form-input-wrapper my-3">
                         <div class="search-input">

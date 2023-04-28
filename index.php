@@ -15,7 +15,6 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,22 +91,25 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                         <img class="profile-img" src="./assets/img/mandi-saville.jpg" alt="">
                         <div class="profile-card-body">
                             <h3 class="my-2">My Story</h3>
-                            <p>My journey started in the Eyelash Industry in 2011, when I decided to take a course in Classic Lash Extensions at Pinewood TV Studios with the Award Winning Eyelash Emporium</p>
-                            <a href="about">More...</a>
+                            <p>My journey started in the Eyelash Industry in 2011, when I decided to take a course in Classic Lash Extensions at Pinewood TV Studios with the Award Winning Eyelash Emporium...</p>
+                            <a href="about">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="grid-col">
                     <div class="profile-card">
-
                         <div class="profile-card-body">
                             <h4 class="my-2">Qualifications</h4>
                             <p>I am always training to give you the best level of professionalism that I take pride in. Keeping up to date is very important for me and ensures that you have the very best quality of treatments.</p>
-                            <ul>
-                                <li>Aesthetics</li>
-                                <li>Eye Lash</li>
-                                <li>Brows</li>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Dermal Fillers</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Anti Wrinkle</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Skin Boosters</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Facials</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Waxing</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Dermaplaning</li>
                             </ul>
+                            
                             <p>You can contact me if you have any further questions regarding my qualifications.</p>
                         </div>
                     </div>
@@ -121,8 +123,8 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
             <div class="cta-card">
                 <div class="cta-card-body">
                     <div class="cta-card-text">
-                        <h2 class="my-2">50% Off Micro Needling</h2>
-                        <p>Extra discount when booking appointments through our website and paid for in full.*</p>
+                        <h2 class="my-2">&pound;50 Off Luxury Prescription Facials</h2>
+                        <p>&pound;50 off a course of 3 LBA Luxury Prescription Facials when booked and paid for in full.</p>
                         <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
                     </div>
                 </div>

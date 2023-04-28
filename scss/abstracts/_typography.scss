@@ -26,3 +26,8 @@ h1,h2,h3,h4{
     font-family: $brand-font;
 }
 
+//align text superscripted
+.super{
+    vertical-align: super;
+    font-size:x-small;
+}

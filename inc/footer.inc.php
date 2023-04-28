@@ -1,32 +1,32 @@
 <footer>
     <div class="container py-3 ">
-        
+
         <div class="footer-grid">
-        <h2 class="brand-font footer-brand my-2" itemprop="legalName"><?=$business_name;?></h2>
+            <h2 class="brand-font footer-brand my-2" itemprop="legalName"><?= $business_name; ?></h2>
             <div class="footer-address">
-            
+
                 <address itemprop="Address">
-                    <p><?=$address_line_1;?></p>
-                    <p><?=$address_line_2;?></p>
-                    <p><?=$address_line_3;?></p>
-                    <p><?=$address_county;?></p>
-                    <p><?=$address_pc;?></p>
+                    <p><?= $address_line_1; ?></p>
+                    <p><?= $address_line_2; ?></p>
+                    <p><?= $address_line_3; ?></p>
+                    <p><?= $address_county; ?></p>
+                    <p><?= $address_pc; ?></p>
                 </address>
             </div>
             <div class="footer-contact-details">
                 <ul>
-                    <li itemprop="email"><i class="fa-solid fa-envelope"></i> <a href="mailto:<?=$business_email;?>"><?=$business_email;?></a></li>
-                    <li itemprop="telephone"><i class="fa-solid fa-phone"></i> <a href="tel:<?=$business_phone;?>"><?=$business_phone;?></a></li>
+                    <li itemprop="email"><i class="fa-solid fa-envelope"></i> <a href="mailto:<?= $business_email; ?>"><?= $business_email; ?></a></li>
+                    <li itemprop="telephone"><i class="fa-solid fa-phone"></i> <a href="tel:<?= $business_phone; ?>"><?= $business_phone; ?></a></li>
                 </ul>
             </div>
             <div class="footer-socials">
                 <h2>Follow Us:</h2>
                 <ul>
-                <?php if($socials_result_num >= 1):?>
-                    <?php foreach($socials as $social):?>
-                        <li><a href="http://<?=$social['business_socials_url'];?>" target="_blank" rel="noopener noreferrer"><?=$social['socials_type_icon'];?> <?=$social['socials_type_name'];?></a></li>
-                    <?php endforeach;?>
-                <?php endif;?>
+                    <?php if ($socials_result_num >= 1) : ?>
+                        <?php foreach ($socials as $social) : ?>
+                            <li><a href="http://<?= $social['business_socials_url']; ?>" target="_blank" rel="noopener noreferrer"><?= $social['socials_type_icon']; ?> <?= $social['socials_type_name']; ?></a></li>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </ul>
             </div>
             <div class="footer-subs">
@@ -40,12 +40,21 @@
                     <label for="email">eMail Address</label>
                     <input type="email" name="email" id="email" placeholder="eMail Address">
                 </div>
-                <button class="btn-primary my-2">Submit</button>
+                <button class="btn-primary btn-secondary my-2">
+                    <svg class="icon ">
+                        <use href="assets/img/icons/solid.svg#envelope" />
+                    </svg>
+                    Subscribe
+                    <svg class="icon spinner-icon d-none loader-spinner " id="loading-icon">
+                            <use href="assets/img/icons/solid.svg#circle-notch" />
+                        </svg>
+                </button>
             </div>
         </div>
         <div class="footer-creator-brand my-3">
-            <p class="footer-copyright">&copy; <?=$business_name; echo" ". date('Y')?> </p>
-            <p>Website created by <a href="http://www.parrotmedia.co.uk" target="blank">Parrot Media</a></p>
+            <p class="footer-copyright">&copy; <?= $business_name;
+                                                echo " " . date('Y') ?> </p>
+            <p>Website developed by <a href="http://www.parrotmedia.co.uk" target="blank">Parrot Media</a></p>
         </div>
     </div>
     <div class="cookie-overlay ">

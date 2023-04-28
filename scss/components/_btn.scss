@@ -12,11 +12,12 @@
         box-shadow: 0 0 2px 3px $primary;
         transition: box-shadow 300ms ease-out;
     }
-svg{
-    margin-right: 0.5rem;
-}
+.icon, .loading-btn-text{
+    margin-right: 0.375rem;
 
 }
+}
+
 
 .btn-secondary{
     background-color: white;

@@ -1,0 +1,30 @@
+.loader{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+.loader-spinner{
+    height: 25%;
+    animation: loader 3s infinite ease-in-out;
+    
+}
+
+@keyframes loader{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+
+//class to apply to text while loading
+.loading-btn-text{
+    opacity: 1;
+    transition: opacity 300ms ease-out;
+}
+.loading{
+    opacity: .5;
+    transition: opacity 300ms ease-out;
+}

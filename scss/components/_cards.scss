@@ -170,3 +170,31 @@ a img{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.std-card{
+    padding: $spacer-2;
+    border: 1px solid $primary;
+    border-radius: $border-radius;
+}
+
+//response card for form submission
+.response{
+    padding: $spacer-3;
+    background-color: $primary-form;
+    color: #fff;
+    border-radius: $border-radius;
+}
+
+//change the card if an error has occurred
+.response-error{
+    background-color: $error-response;
+}
+
+///actions card, calls attentions to actions that are available
+.actions-card{
+    width: 80%;
+    margin: 0 auto;
+    background-color: $primary-1000;
+    border-radius: $border-radius;
+    padding: $spacer-2;
+}

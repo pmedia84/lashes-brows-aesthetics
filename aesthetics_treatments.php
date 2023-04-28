@@ -52,8 +52,8 @@ include("connect.php");
                 </div>
 
                 <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box grid-col-2-md" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">>
-                        <p class="text-box-subtitle">Reduces Visible Signs Of Aging, Fine Lines & Wrinkles</p>
+                    <div class="text-box grid-col-2-md" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+                        <p class="text-box-subtitle">Reduce Visible Signs Of Aging, Fine Lines & Wrinkles</p>
                         <h3 class="text-box-title" itemprop="name">Anti Wrinkle Treatments</h3>
 
                         <p class="text-box-text">Depending on the areas treated, this can last from 3-12 months.</p>

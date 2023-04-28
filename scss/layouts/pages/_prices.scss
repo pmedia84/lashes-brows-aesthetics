@@ -34,11 +34,7 @@
     }
 }
 .price-list-controls{
-    width: 80%;
-    margin: 0 auto;
-    background-color: $primary-1000;
-    border-radius: $border-radius;
-    padding: $spacer-2;
+
     @media(min-width: $md){
         display: flex;
         align-items: center;
