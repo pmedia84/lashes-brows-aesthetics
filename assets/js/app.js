@@ -46,7 +46,6 @@ $(window).on('load', function () {
 $("#contact_form").on("submit", function (e) {
     e.preventDefault();
 
-
     //bring in recaptcha scripts and request token
     grecaptcha.ready(function () {
         grecaptcha.execute('6LdHtLwlAAAAAEuX7k_J0hlgq3MsyC2On2Ouc9JG', {
@@ -83,17 +82,119 @@ $("#contact_form").on("submit", function (e) {
                     }
                 }
             });
-
-
-
-
         });
     });
 
+});
+
+//close popup if user clicks no thanks or the close button
+$(".popup-close").on("click", function () {
+    $(".popup").removeClass("popup-active");
+    if ($(this).attr("id") == "dismiss") {
+        setCookie("subscribe_dismiss", "yes", 182);
+    }
 })
 
+///Subscriber script
+$("#subscribe").on("submit", function (e) {
 
+    e.preventDefault();
+        //bring in recaptcha scripts and request token
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LdHtLwlAAAAAEuX7k_J0hlgq3MsyC2On2Ouc9JG', {
+                action: 'submit'
+            }).then(function (token) {
+                var formData = new FormData($("#subscribe").get(0));
+                console.log(formData);
+                formData.append("action", "subscribe");
+                formData.append("token", token);
+                $.ajax({ //start ajax post
+                    type: "POST",
+                    url: "scripts/functions.php",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    beforeSend: function () {
+                        //!sort loaders
+                        $("#subscriber_loading-icon").show(400);
+                        $("#subscriber_loading-btn-text").addClass("loading");
+                        $("#subscriber_name").removeClass("input-error");
+                        $("#subscriber_email").removeClass("input-error");
+                    },
+                    //!handle response json file
+                    success: function (data, responseText) {
+                        const response = JSON.parse(data);
+                        //handle error codes
+                        if (response.response_code == 400 || response.response_code==403) {
+                            if (response.name_req == 0) {
+                                $("#subscriber_name").addClass("input-error");
+                            }
+                            if (response.email_req == 0) {
+                                $("#subscriber_email").addClass("input-error");
+                            }
+                            $("#response-message").text(response.message);
+                            $("#subscribe_response").addClass("response-error");
+                            $("#subscribe_response").slideDown(400);
+                            $("#subscriber_loading-icon").hide(400);
+                            $("#subscriber_loading-btn-text").toggleClass("loading");
+                        }
+                        if (response.response_code == 200 || response.response_code == 201) {
+                            $("#response-message").text(response.message);
+                            $("#subscribe_response").removeClass("response-error");
+                            $("#subscribe_response").slideDown(400);
+                            $("#subscriber_loading-icon").hide(400);
+                            $("#subscriber_loading-btn-text").toggleClass("loading");
+                            $("#subscribe").addClass("popup-body-success");
+                            //!hide form when done and add a cookie
+                            setCookie("subscribed", "yes", 182);
+                        }
 
+            
+                    }
+                });
 
+            });
+        });
+})
+//? set cookies
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+//?find cookie
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 
+//? check a cookie is set and run the functions needed
+function checkCookie(cname) {
+    let cookie = getCookie(cname);
+    if (cookie == "") {
+        console.log(cname);
 
+    }
+}
+
+$(window).on("load", function () {
+    //check if the user has subscribed or not
+    if (getCookie("subscribed") == "") {
+        $(".popup").addClass("popup-active");
+        if (getCookie("subscribe_dismiss") != "") {
+            $(".popup").removeClass("popup-active");
+        }
+    }
+})

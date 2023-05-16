@@ -8,10 +8,23 @@
     display: grid;
     place-items: center;
     padding: $spacer-3;
-    background-color: rgba(176, 176, 176, 0.607);
-    backdrop-filter: blur(8px);
+    scale: .5;
+    opacity: 0;
+    transition: scale 300ms ease-out, opacity 300ms ease-out;
+    pointer-events: none;
+}
+.popup-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .btn-close{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
 }
 .popup-body{
+    position: relative;
     background-color: $primary-1000;
     padding: $spacer-3;
     border-radius: $border-radius;
@@ -22,4 +35,23 @@
         text-align: center;
         font-size: $fs-600;
     }
+    .button-section{
+        width: 100%;
+    }
+
 }
+.popup-active{
+    opacity: 1;
+    scale: 1;
+    pointer-events: all;
+
+}
+
+//add response class to the form and fade out
+.popup-body-success{
+    opacity: .75;
+    transition: opacity 500ms ease-out;
+    pointer-events: none;
+}
+
+

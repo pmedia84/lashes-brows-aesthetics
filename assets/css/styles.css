@@ -172,12 +172,15 @@ a.btn-primary{
     margin-block: 0.5rem;
 } 
 .btn-close{/*close button*/
-   background: transparent url("../../assets/img/icons/close.svg") center/1.5em auto no-repeat;
     border: 0;
     border-radius: .375rem;
-    padding: .25em .25em;
-    width: 2rem;
-    height: 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+} 
+.btn-close .icon{
+        margin: 0;
+    } 
+.btn-close {
     cursor: pointer;
     opacity: .5;
 } 
@@ -441,6 +444,12 @@ input[type="checkbox"]:focus {
 .search-input button path{
             fill: rgb(253, 234, 232);
         } 
+/*/Form error classes to apply to forms that are required*/ 
+.input-error{
+    color: #fff;
+    border: 1px solid hsl(0, 95%, 67%);
+    background-color: hsl(0, 95%, 67%);
+} 
 /*simple card with header image*/ 
 .card, .profile-card{
     background-color: #fff;
@@ -837,22 +846,50 @@ border: 1px solid hsl(39, 40%, 57%);
     display: grid;
     place-items: center;
     padding: 1.5rem;
-    background-color: rgba(176, 176, 176, 0.607);
-    -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
+    scale: .5;
+    opacity: 0;
+    transition: scale 300ms ease-out, opacity 300ms ease-out;
+    pointer-events: none;
 } 
+.popup-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+.popup-header .btn-close{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    } 
 .popup-body{
+    position: relative;
     background-color: hsl(6, 83%, 98%);
     padding: 1.5rem;
     border-radius: 5px;
     border: 1px solid hsl(39, 40%, 57%);
     width: 100%;
     max-width: 500px;
+
 } 
 .popup-body h2{
         text-align: center;
         font-size: 2.5rem;
     } 
+.popup-body .button-section{
+        width: 100%;
+    } 
+.popup-active{
+    opacity: 1;
+    scale: 1;
+    pointer-events: all;
+
+} 
+/*add response class to the form and fade out*/ 
+.popup-body-success{
+    opacity: .75;
+    transition: opacity 500ms ease-out;
+    pointer-events: none;
+} 
 .fa-ul .fa-li{
     color: hsl(39, 40%, 57%);
 } 

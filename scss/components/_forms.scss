@@ -269,3 +269,10 @@ input[type="checkbox"]:focus {
     }
     
 }
+
+///Form error classes to apply to forms that are required
+.input-error{
+    color: #fff;
+    border: 1px solid $error-response;
+    background-color: $error-response;
+}

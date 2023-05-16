@@ -11,8 +11,7 @@ include("connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("inc/header.inc.php"); ?>
-    <!-- Google Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdHtLwlAAAAAEuX7k_J0hlgq3MsyC2On2Ouc9JG" async="false"></script>
+
     <title>Contact Me : Lashes Brows & Aesthetics</title>
     <link rel="canonical" href="https://<?= $domain_name; ?>/contact">
 </head>
@@ -59,7 +58,8 @@ include("connect.php");
                             </svg>Send Message</span>
                         <svg class="icon spinner-icon d-none loader-spinner " id="loading-icon">
                             <use href="assets/img/icons/solid.svg#circle-notch" />
-                        </svg></button>
+                        </svg>
+                    </button>
                 </form>
                 <div class="google-policy">
                     <p>Our website is protected by reCAPTCHA and the Google</p>
@@ -67,8 +67,8 @@ include("connect.php");
                     <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
                 </div>
                 <div class="response d-none">
-                <p id="response-msg"></p>
-            </div>
+                    <p id="response-msg"></p>
+                </div>
             </div>
             <div class="map">
                 <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJReBlEir510cRYIV3Yjs3hbk&key=AIzaSyD5e7plvKHapsDIODrl6JJ-j3qXvxPtw9Y">

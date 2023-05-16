@@ -29,7 +29,7 @@
                     <?php endif; ?>
                 </ul>
             </div>
-            <div class="footer-subs">
+            <!-- <div class="footer-subs">
                 <h2>Subscribe:</h2>
                 <p>Subscribe to our mailing list and receive <strong>£5.00</strong> off your next treatment!</p>
                 <div class="form-input-wrapper">
@@ -46,10 +46,10 @@
                     </svg>
                     Subscribe
                     <svg class="icon spinner-icon d-none loader-spinner " id="loading-icon">
-                            <use href="assets/img/icons/solid.svg#circle-notch" />
-                        </svg>
+                        <use href="assets/img/icons/solid.svg#circle-notch" />
+                    </svg>
                 </button>
-            </div>
+            </div> -->
         </div>
         <div class="footer-creator-brand my-3">
             <p class="footer-copyright">&copy; <?= $business_name;
@@ -89,23 +89,48 @@
         <button type="button" class="btn-close close-cookies" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
         <button class="btn btn-primary accept-cookies">Accept</button>
     </div>
-    <!-- <div class="popup">
+    <div class="popup">
         <div class="popup-body">
+            <div class="popup-header">
+                <button class="btn-primary btn-close popup-close">Close
+                    <svg class="icon ">
+                        <use href="assets/img/icons/solid.svg#xmark" />
+                    </svg>
+                </button>
+            </div>
             <h2>New Customer Offer</h2>
             <p class="text-center">Subscribe to our mailing list and receive £5.00 off your first treatment.</p>
-            <div class="form-input-wrapper">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
+            <p id="error-msg" class="form-error-msg"></p>
+            <form action="scripts/functions.php" method="POST" id="subscribe">
+                <div class="form-input-wrapper">
+                    <label for="subscriber_name">Name</label>
+                    <input type="text" name="name" id="subscriber_name" placeholder="Name">
                 </div>
                 <div class="form-input-wrapper">
-                    <label for="email">eMail Address</label>
-                    <input type="email" name="email" id="email" placeholder="eMail Address">
+                    <label for="subscriber_email">eMail Address</label>
+                    <input type="email" name="email" id="subscriber_email" placeholder="eMail Address">
                 </div>
-                <button class="btn-primary my-2">Subscribe</button>
-                <button class="btn-primary btn-secondary">No Thanks</button>
-                <p>Your email address will not be shared with anyone except ourselves for the sole purpose of contacting you with newsletters and special offers, you can unsubscribe at any time.</p>
-        </div>
-    </div> -->
-</footer>
+                <div class="button-section">
+                    <button class="btn-primary my-2 form-controls-btn loading-btn" type="submit">
+                        <span id="subscriber_loading-btn-text" class="loading-btn-text">
+                            <svg class="icon ">
+                                <use href="assets/img/icons/solid.svg#at" />
+                            </svg>Subscribe</span>
+                        <svg class="icon spinner-icon d-none loader-spinner " id="subscriber_loading-icon">
+                            <use href="assets/img/icons/solid.svg#circle-notch" />
+                        </svg>
+                    </button>
 
+                    <button class="btn-primary btn-secondary popup-close" type="button" id="dismiss">No Thanks</button>
+                </div>
+            </form>
+            <div class="response d-none my-2" id="subscribe_response">
+                <p id="response-message"></p>
+
+            </div>
+
+            <p class="my-2">Your email address will not be shared with anyone except ourselves for the sole purpose of contacting you with newsletters and special offers, you can unsubscribe at any time.</p>
+        </div>
+    </div>
+</footer>
 <script src="assets/js/app.js"></script>
