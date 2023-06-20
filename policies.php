@@ -15,6 +15,7 @@ include("connect.php");
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>My Policies : Lashes Brows & Aesthetics</title>
+    <meta name="description" content="My policies. Make sure you are familiar with these before your first appointment.">
 </head>
 
 <body>
@@ -33,7 +34,7 @@ include("connect.php");
         </section>
         <section class="container my-3">
 
-            <h2 class="section-title text-center bg-title my-3">Terms &amp; Conditions</h2>
+            <h2 class="section-title text-center bg-title">Terms &amp; Conditions</h2>
             <div class="std-card actions-card">
                 <h2 class="my-2">Forms</h2>
                 <p>Before you attend your first appointment, you will need to have completed a consultation form. You can now do this here.</p>

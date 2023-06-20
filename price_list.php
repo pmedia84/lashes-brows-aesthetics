@@ -11,7 +11,9 @@ include("connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("inc/header.inc.php"); ?>
-    <title>About Us : Lashes Brows & Aesthetics</title>
+    <title>Lashes Brows & Aesthetics - Price List</title>
+    <link rel="canonical" href="https://<?= $domain_name; ?>/price_list">
+    <meta name="description" content="View my full price list for all my treatments, Lashes, Brows and Aesthetics Treatments.">
 </head>
 
 <body>

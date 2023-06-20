@@ -6,12 +6,15 @@ $headings-ff: 'Playfair Display', serif;
 $brand-font : 'Imperial Script', cursive;
 body{
     font-family: $body-ff;
+    font-weight: 300;
 }
 
 h1,h2,h3,h4{
-    font-family: $headings-ff;
+    font-weight: 400;
 }
-
+h2,h3,h4{
+    margin-block-start: 1em;
+}
 .section-title{
     font-size: $fs-500;
     @media(min-width:$md){

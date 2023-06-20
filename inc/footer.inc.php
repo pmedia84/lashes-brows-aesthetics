@@ -2,7 +2,7 @@
     <div class="container py-3 ">
 
         <div class="footer-grid">
-            <h2 class="brand-font footer-brand my-2" itemprop="legalName"><?= $business_name; ?></h2>
+            <h2 class="brand-font footer-brand" itemprop="legalName"><?= $business_name; ?></h2>
             <div class="footer-address">
 
                 <address itemprop="Address">
@@ -15,8 +15,8 @@
             </div>
             <div class="footer-contact-details">
                 <ul>
-                    <li itemprop="email"><i class="fa-solid fa-envelope"></i> <a href="mailto:<?= $business_email; ?>"><?= $business_email; ?></a></li>
-                    <li itemprop="telephone"><i class="fa-solid fa-phone"></i> <a href="tel:<?= $business_phone; ?>"><?= $business_phone; ?></a></li>
+                    <li itemprop="email"><a href="mailto:<?= $business_email; ?>"><i class="fa-solid fa-envelope"></i> <?= $business_email; ?></a></li>
+                    <li itemprop="telephone"> <a href="tel:<?= $business_phone; ?>"><i class="fa-solid fa-phone"></i> <?= $business_phone; ?></a></li>
                 </ul>
             </div>
             <div class="footer-socials">
@@ -29,16 +29,16 @@
                     <?php endif; ?>
                 </ul>
             </div>
-            <!-- <div class="footer-subs">
-                <h2>Subscribe:</h2>
-                <p>Subscribe to our mailing list and receive <strong>£5.00</strong> off your next treatment!</p>
+             <div class="footer-subs">
+                <h2 class="mb-1">New Customer Offer</h2>
+                <p>Subscribe to our mailing list and receive <strong>£5.00</strong> off your first treatment!</p>
                 <div class="form-input-wrapper">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="name" id="name" placeholder="Name" autocomplete="name">
                 </div>
                 <div class="form-input-wrapper">
                     <label for="email">eMail Address</label>
-                    <input type="email" name="email" id="email" placeholder="eMail Address">
+                    <input type="email" name="email" id="email" placeholder="eMail Address" autocomplete="email">
                 </div>
                 <button class="btn-primary btn-secondary my-2">
                     <svg class="icon ">
@@ -49,7 +49,7 @@
                         <use href="assets/img/icons/solid.svg#circle-notch" />
                     </svg>
                 </button>
-            </div> -->
+            </div> 
         </div>
         <div class="footer-creator-brand my-3">
             <p class="footer-copyright">&copy; <?= $business_name;
@@ -104,11 +104,11 @@
             <form action="scripts/functions.php" method="POST" id="subscribe">
                 <div class="form-input-wrapper">
                     <label for="subscriber_name">Name</label>
-                    <input type="text" name="name" id="subscriber_name" placeholder="Name">
+                    <input type="text" name="name" id="subscriber_name" placeholder="Name" autocomplete="name">
                 </div>
                 <div class="form-input-wrapper">
                     <label for="subscriber_email">eMail Address</label>
-                    <input type="email" name="email" id="subscriber_email" placeholder="eMail Address">
+                    <input type="email" name="email" id="subscriber_email" placeholder="eMail Address" autocomplete="email">
                 </div>
                 <div class="button-section">
                     <button class="btn-primary my-2 form-controls-btn loading-btn" type="submit">

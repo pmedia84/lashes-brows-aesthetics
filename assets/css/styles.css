@@ -89,9 +89,13 @@ select {
 /*@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Playfair+Display&display=swap');*/
 body{
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 h1,h2,h3,h4{
-    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+h2,h3,h4{
+    margin-block-start: 1em;
 }
 .section-title{
     font-size: 2rem;
@@ -137,8 +141,7 @@ a:hover{
     } 
 .btn-primary {/*primary button*/
     outline: none;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     background-color: rgb(253, 234, 232);
     color: #7e514e;
     border: 1.5px solid hsl(39, 40%, 57%);
@@ -236,8 +239,7 @@ input{
     outline: none;
 } 
 input[type=text], input[type=password], textarea, select, input[type=file], input[type=email]{
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid #7e514e;
     border-radius: 5px;
     padding: 0.25rem;
@@ -270,8 +272,7 @@ select{
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;
     font-size: 1rem;
     background-color: #fff;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid #7e514e;
     border-radius: 0.25rem;
     background-image: url("../img/icons/down.svg");
@@ -321,8 +322,7 @@ select:focus{
     gap: 0.5em;
 } 
 input[type="checkbox"]{/*basic styling*/
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     background-color: #fff;
     margin: 0;
     font: inherit;
@@ -346,8 +346,7 @@ input[type="checkbox"]::before{
     transition: 200ms transform ease-in-out;
     box-shadow: inset 1em 1em #7e514e;
     transform-origin: bottom left;
-    -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 } 
 input[type="checkbox"]:checked::before{
     transform: scale(1);
@@ -1190,7 +1189,8 @@ border: 1px solid hsl(39, 40%, 57%);
     place-self: center;
     text-align: center;
 } 
-footer h2{
+footer h2,footer h3{
+        margin-block-start: 0;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         color: #7e514e;
@@ -1224,6 +1224,9 @@ footer .footer-brand {
 .footer-contact-details ul li > svg{
         color: #7e514e;
     } 
+.footer-contact-details ul li{
+        margin-block: 0.5rem;
+    } 
 .footer-creator-brand{
     display: flex;
     flex-direction: column;
@@ -1242,6 +1245,9 @@ footer .footer-brand {
         padding: 0;
         list-style-type: none;
     } 
+.footer-socials ul li{
+        margin-block: 0.5rem;
+    } 
 /*/layout for larger screens*/ 
 .footer-grid{/*structure for footer*/
     display: grid;
@@ -1255,6 +1261,9 @@ footer .footer-brand {
 .footer-brand{
     grid-column:1/5 ;
 }
+} 
+.footer-subs{
+    max-width: 400px;
 } 
 .section-divider{
     width: max-content;
@@ -1454,7 +1463,7 @@ footer .footer-brand {
 
 } 
 .price-hero{
-    background-image: url("../../assets/img/hero/price-hero.webp");
+    background-image: url("../../assets/img/hero/price-herov2.webp");
    background-position: center;
 } 
 /*price list with border and styles*/ 

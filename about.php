@@ -14,7 +14,7 @@ include("connect.php");
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <title>About Us : Lashes Brows & Aesthetics</title>
+    <title>About Me : Lashes Brows & Aesthetics</title>
 </head>
 <body>
     <!-- Nav Bar -->

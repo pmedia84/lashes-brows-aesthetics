@@ -24,6 +24,8 @@ if ($news = $db->prepare('SELECT * FROM news_articles ORDER BY news_articles_id 
     <?php include("inc/header.inc.php"); ?>
 
     <title>Latest News and Offers From Lashes Brows & Aesthetics Sutton Bridge</title>
+    <meta name="description" content="Find out about my latest news and special offers.">
+    <link rel="canonical" href="https://<?= $domain_name; ?>/news-and-special-offers">
 </head>
 
 <body>

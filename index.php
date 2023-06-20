@@ -15,6 +15,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +25,10 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Eyebrow extensions : Lashes Brows & Aesthetics</title>
+    <meta name="description" content="Lashes, Brows and Aesthetics treatments in Sutton Bridge, Lincolnshire. I offer a full range of services from Eyelash extensions to Derma Planing. Find out how you can give yourself that WOW factor with my treatments, you will be amazed! ">
+    <link rel="canonical" href="https://<?= $domain_name; ?>">
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/img/hero/hero.webp" type="image/webp">
 </head>
 
 <body itemscope itemtype="https://schema.org/BeautySalon">
@@ -92,7 +97,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                         <div class="profile-card-body">
                             <h3 class="my-2">My Story</h3>
                             <p>My journey started in the Eyelash Industry in 2011, when I decided to take a course in Classic Lash Extensions at Pinewood TV Studios with the Award Winning Eyelash Emporium...</p>
-                            <a href="about">Read More...</a>
+                            <a href="about">Find out more about my story...</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +114,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                                 <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Waxing</li>
                                 <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Dermaplaning</li>
                             </ul>
-                            
+
                             <p>You can contact me if you have any further questions regarding my qualifications.</p>
                         </div>
                     </div>
@@ -139,9 +144,9 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                     <?php if ($services_f_q->num_rows > 0) :
                         foreach ($services_f_q as $service) : ?>
                             <div class="service-card">
-                                <h3 class="service-card-title my-2 text-center"><?= html_entity_decode($service['service_name']) ;?></h3>
-                                <p class="service-card-service my-2 text-center"><?= html_entity_decode($service['service_description']) ;?></p>
-                                <p class="service-card-price my-2 text-center">&pound;<?=$service['service_price'];?></p>
+                                <h3 class="service-card-title my-2 text-center"><?= html_entity_decode($service['service_name']); ?></h3>
+                                <p class="service-card-service my-2 text-center"><?= html_entity_decode($service['service_description']); ?></p>
+                                <p class="service-card-price my-2 text-center">&pound;<?= $service['service_price']; ?></p>
                                 <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
                             </div>
                     <?php endforeach;
@@ -224,7 +229,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                                     <img src="../admin/assets/img/news/<?= $article_img; ?>" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <a href="post?article_id=<?=$article['news_articles_id'];?>">
+                                    <a href="post?article_id=<?= $article['news_articles_id']; ?>">
                                         <h3 class="card-body-title"><?= $article['news_articles_title']; ?></h3>
                                     </a>
                                     <div class="news-card-text">
@@ -233,7 +238,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                                     </div>
 
 
-                                    <a class="my-2" href="post?article_id=<?=$article['news_articles_id'];?>">Read More</a><br>
+                                    <a class="my-2" href="post?article_id=<?= $article['news_articles_id']; ?>">See full article...</a><br>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -243,7 +248,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
 
         </section>
         <section>
-            <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJReBlEir510cRYIV3Yjs3hbk&key=AIzaSyD5e7plvKHapsDIODrl6JJ-j3qXvxPtw9Y">
+            <iframe title="Google maps location of Lashes, Brows & Aesthetics" width="100%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJReBlEir510cRYIV3Yjs3hbk&key=AIzaSyD5e7plvKHapsDIODrl6JJ-j3qXvxPtw9Y">
             </iframe>
         </section>
     </main>

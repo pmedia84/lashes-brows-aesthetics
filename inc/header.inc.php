@@ -6,6 +6,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <!-- Stylesheet -->
 <link rel="stylesheet" href="assets/css/styles.css">
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <!-- Font Awesome -->
