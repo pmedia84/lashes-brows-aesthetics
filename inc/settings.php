@@ -43,5 +43,9 @@ $socials_result_num = $socials->num_rows;
 //News articles 
 //set up a default image if no image has been chosen when the article was made
 $article_default_img = "news-item.webp";
+
+//Book now button, used across the site
+$book_now_btn='<a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
+$book_now_btn_cta='<a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
 ?>
 

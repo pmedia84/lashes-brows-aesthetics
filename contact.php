@@ -25,7 +25,7 @@ include("connect.php");
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1>Contact Me</h1>
-                    <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                    <?=$book_now_btn_cta;?>
                 </div>
             </div>
         </section>

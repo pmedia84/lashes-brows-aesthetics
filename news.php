@@ -38,7 +38,7 @@ if ($news = $db->prepare('SELECT * FROM news_articles ORDER BY news_articles_id 
                 <div class="hero-text">
                     <h1>Latest News and Offers</h1>
                     <p>Keep up to date with my latest news and any special offers.</p>
-                    <a class="btn-primary btn-cta my-3" href="">Book Now</a>
+                    <?=$book_now_btn_cta;?>
                 </div>
             </div>
         </section>

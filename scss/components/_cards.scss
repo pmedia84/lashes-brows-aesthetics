@@ -198,3 +198,36 @@ a img{
     border-radius: $border-radius;
     padding: $spacer-2;
 }
+
+//CTA banner to highlight an action.
+.cta-banner{
+    color: $secondary;
+    background-color: $primary-1000;
+    border-radius: $border-radius;
+    h2{
+        margin-block-start: 0;
+    }
+    padding: $spacer-3;
+}
+
+//image card. Card with an image cap
+
+.img-card{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 1fr;
+    img{
+        border-start-start-radius: inherit;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.img-card-body{
+    height: 100%;
+    padding: $spacer-3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}

@@ -26,98 +26,100 @@ include("connect.php");
                 <div class="hero-text">
                     <h1>Lashes & Brow Treatments</h1>
                     <p>Give yourself that WOW Factor</p>
-                    <a class="btn-primary btn-cta my-3" href="">Book Now</a>
+                    <?= $book_now_btn_cta; ?>
                 </div>
             </div>
         </section>
         <section class="">
-            <h2 class="section-title text-center py-3">Some of our popular treatments</h2>
-            <p class="text-center section-subtitle">Some of our most popular Eyelash and Brow Services.</p>
-            
             <div class="container">
-
-                <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box">
-                        <p class="text-box-subtitle">Eyes Are The Window To Your Soul</p>
-                        <h3 class="text-box-title">Lashes</h3>
-                       
-                        <p class="text-box-text">From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natural lash, giving a fuller, darker effect. The look can vary from subtle, being Classic to extremely dramatic with Extreme Mega Volume.</p>
-                        
-                        <div class="text-box-price-card">
-                            <p>Starting From <span>£40.00</span></p>
+                <h2 class="section-title text-center">Some of my popular treatments</h2>
+                <p class="text-center section-subtitle">This is just a few of my Lash and Brow treatments that I provide. Give yourself that WOW factor and enhance your look with some of my amazing treatments. For the full list of treatments along with their prices, you can <a href="price_list">view my price list</a>.</p>
+                <div class="my-2 services-grid">
+                    <div class="text-box img-card">
+                        <img src="./assets/img/services/lash-extensionsv2.webp" alt="">
+                        <div class="img-card-body">
+                            <p class="text-box-subtitle">Eyes Are The Window To Your Soul</p>
+                            <h3 class="text-box-title">Lashes</h3>
+                            <p class="text-box-text">From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natural lash, giving a fuller, darker effect. The look can vary from subtle, being Classic to extremely dramatic with Extreme Mega Volume.</p>
+                            <div class="img-card-footer">
+                                <div class="text-box-price-card">
+                                    <p>Starting From <span>£40.00</span></p>
+                                </div>
+                                <?= $book_now_btn; ?>
+                            </div>
                         </div>
-                        <a href="" class="btn-primary my-2">Book Now</a>
+                    </div>
+                    <div class="text-box img-card">
+                        <img src="./assets/img/services/brows.webp" alt="">
+                        <div class="img-card-body">
+                            <p class="text-box-subtitle">If Eyes Are The Window To Your Soul, Then Brows Are The Frame To That Window</p>
+                            <h3 class="text-box-title">Brows</h3>
+                            <p class="text-box-text">From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
+                            <div class="img-card-footer">
+                                <div class="text-box-price-card">
+                                    <p>Starting From <span>£40.00</span></p>
+                                </div>
+                                <?= $book_now_btn; ?>
+                            </div>
+                        </div>
 
                     </div>
-                    
-                        <img class="border-std" src="./assets/img/services/lash-extensions.webp" alt="">
-                    
                 </div>
 
-                <div class="grid-row-2col my-3 services-grid">
-                    <div class="text-box grid-col-2-md">
-                        <p class="text-box-subtitle">If Eyes Are The Window To Your Soul, Then Brows Are The Frame To That Window</p>
-                        <h3 class="text-box-title">Brows</h3>
-                       
-                        <p class="text-box-text">From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
-                        
-                        <div class="text-box-price-card">
-                            <p>Starting From <span>£40.00</span></p>
+                <div class="services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <div class="text-box img-card">
+                        <img src="./assets/img/services/lash-extensions.webp" alt="">
+                        <div class="img-card-body">
+                            <p class="text-box-subtitle">Boost your natural lashes!</p>
+                            <h3 class="text-box-title" itemprop="name">Lash Lifting</h3>
+                            <p class="text-box-text">The natural lashes are boosted from the root, giving them a lifted, lengthened appearance, without the need for extensions.</p>
+                            <div class="img-card-footer">
+                                <div class="text-box-price-card">
+                                    <p>Starting From <span>&pound;50.00</span></p>
+                                </div>
+                                <?= $book_now_btn; ?>
+                            </div>
                         </div>
-                        <a href="" class="btn-primary my-2">Book Now</a>
+                    </div>
+                    <div class="text-box img-card">
+                        <img src="./assets/img/services/brow-laminationv2.webp" alt="">
+                        <div class="img-card-body">
+                            <p class="text-box-subtitle">Give your brows that ultimate flexibility!</p>
+                            <h3 class="text-box-title" itemprop="name">Brow Lamination</h3>
+                            <p class="text-box-text">Brow lamination involves straightening and lifting the hairs using a chemical solution, which allows the hairs to have more flexibility to move them into your desired shape, therefore covering any gaps or stray areas.</p><br>
+                            <div class="img-card-footer">
+                                <div class="text-box-price-card">
+                                    <p>Starting From <span>&pound;45.00</span></p>
+                                </div>
+                                <?= $book_now_btn; ?>
+                            </div>
+                        </div>
 
                     </div>
-                    
-                        <img class="border-std grid-col-1-md" src="./assets/img/services/brows.webp" alt="">
-                    
                 </div>
-                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
-                    <div class="text-box">
-                        <p class="text-box-subtitle">Boost your natural lashes!</p>
-                        <h3 class="text-box-title" itemprop="name">Lash Lifting</h3>
 
-                        <p class="text-box-text">The natural lashes are boosted from the root, giving them a lifted, lengthened appearance, without the need for extensions.</p>
-                        <div class="text-box-price-card">
-                            <p>Starting From <span>&pound;50.00</span></p>
-                        </div>
-                        <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
 
-                    </div>
-
-                    <img class="border-std" src="./assets/img/services/lash-extensions.webp" alt="">
-
+                <div class="cta-banner my-2">
+                    <h2>Want to find out more?</h2>
+                    <h3>Contact Me</h3>
+                    <p>If you have any questions regarding any of my Lashes & Brow treatments you can <a href="contact">Contact Me</a> and I will be happy to answer any questions that you may have regarding any of my treatments.</p>
+                    <h3>Price List</h3>
+                    <p>For my full list of Lashes & Brow treatments including my <a href="aesthetics-treatments-sutton-bridge">Aesthetics Treatments</a> you can view my price list.</p>
+                    <a href="price_list" class="btn-primary btn-cta my-2">View Price List</a>
                 </div>
-                <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
-                    <div class="text-box">
-                        <p class="text-box-subtitle">Give your brows that ultimate flexibility!</p>
-                        <h3 class="text-box-title" itemprop="name">Brow Lamination</h3>
 
-                        <p class="text-box-text">Brow lamination involves straightening and lifting the hairs using a chemical solution, which allows the hairs to have more flexibility to move them into your desired shape, therefore covering any gaps or stray areas.</p><br>
-
-                        <div class="text-box-price-card">
-                            <p>Starting From <span>&pound;45.00</span></p>
-                        </div>
-                        <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
-
-                    </div>
-                    <img class="border-std grid-col-1-md" src="./assets/img/services/brow-lamination.webp" alt="">
-
-                </div>
-                
-                
-                
             </div>
         </section>
 
-        
-
-        
-        
 
 
-        
 
-        
+
+
+
+
+
+
 
     </main>
 

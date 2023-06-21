@@ -43,7 +43,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                     <h1>Self care is not an expense ...</h1>
                     <p class="hero-subtitle">It's an investment</p>
                     <p itemprop="description">Look and feel more youthful without the need for surgery </p>
-                    <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                    <?=$book_now_btn_cta;?>
                 </div>
 
             </div>
@@ -59,7 +59,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                         <h3 class="card-body-title">Aesthetics</h3>
                         <p>Aesthetics are becoming a main part of the Beauty Industry, and I’m pleased to say that I’m fully trained and qualified to be able to offer it all to my clients. I’m also trained in complications, first aid and body dysmorphia , so I won’t let you go out looking like the bride of Frankenstein!</p>
                         <a class="my-2" href="aesthetics_treatments">Find Out More</a><br>
-                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                        <?=$book_now_btn;?>
                     </div>
                 </div>
                 <div class="card">
@@ -70,7 +70,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
                         <p>From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natrual lash, giving a fuller, darker efffect.</p>
                         <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
-                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                        <?=$book_now_btn;?>
                     </div>
                 </div>
                 <div class="card span">
@@ -81,7 +81,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                         <h3 class="card-body-title">Eye Brows</h3>
                         <p>From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
                         <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
-                        <a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                        <?=$book_now_btn;?>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                     <div class="cta-card-text">
                         <h2 class="my-2">&pound;50 Off Luxury Prescription Facials</h2>
                         <p>&pound;50 off a course of 3 LBA Luxury Prescription Facials when booked and paid for in full.</p>
-                        <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
+                        <?=$book_now_btn;?>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@ $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"'
                                 <h3 class="service-card-title my-2 text-center"><?= html_entity_decode($service['service_name']); ?></h3>
                                 <p class="service-card-service my-2 text-center"><?= html_entity_decode($service['service_description']); ?></p>
                                 <p class="service-card-price my-2 text-center">&pound;<?= $service['service_price']; ?></p>
-                                <a href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank" class="btn-primary my-2">Book Now</a>
+                                <?=$book_now_btn;?>
                             </div>
                     <?php endforeach;
                     endif; ?>

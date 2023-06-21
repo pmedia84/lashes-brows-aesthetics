@@ -1,65 +1,88 @@
-.grid-row-2col{//grid row with 2 columns of equal width
+.grid-row-2col {
+    //grid row with 2 columns of equal width
     display: grid;
     gap: $spacer-2;
-    @media(min-width:$md){
+
+    @media(min-width:$md) {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(100px, auto);
+        //grid-auto-rows: minmax(100px, auto);
     }
 }
-.grid-row-3col{//grid row with 3 columns of equal width
+
+.grid-row-3col {
+    //grid row with 3 columns of equal width
     display: grid;
     gap: $spacer-2;
-    @media(min-width:$md){
+
+    @media(min-width:$md) {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(100px, auto);
     }
 }
+
 //2 column grid
-.grid-2col{
+.grid-2col {
     display: grid;
     gap: $spacer-3;
-    @media(min-width: $md){
-        grid-template-columns: 1fr 1fr;
+
+    @media(min-width: $md) {
+        grid-template-columns: 1fr auto;
     }
-    
+
 }
-.grid-col{ //grid column
+
+.grid-col {
+    //grid column
     place-self: stretch;
 }
+
 //Utility classes for grid 
-.place-grid-start{//places a grid item at the top of a grid row
+.place-grid-start {
+    //places a grid item at the top of a grid row
     place-self: start;
 }
-@media(min-width:$md){
-    .grid-col-1-md{
+
+@media(min-width:$md) {
+    .grid-col-1-md {
         //place item in column 1 only on larger screens
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    
-    .grid-col-2-md{
+
+    .grid-col-2-md {
         //place item in column 2 only on larger screens
         grid-column: 2/3;
         grid-row: 1/2;
     }
 }
 
-.stretch{
+.stretch {
     //stretch a grid item
     place-self: start;
     height: 100%;
 }
 
-.grid-auto{ //auto grid small columns
+.grid-auto {
+    //auto grid small columns
     display: grid;
     gap: $spacer-3;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 //Services layout grid, stretches adjacent images to fill up all space available
-.services-grid{
-    img{
-        height: 100%;
-        object-fit: cover;
+.services-grid {
+    display: grid;
+    gap: $spacer-2;
+
+    .no-stretch {
+        place-self: center;
+    }
+}
+
+@media(min-width: $md) {
+    .services-grid {
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+
     }
 }

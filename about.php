@@ -25,15 +25,13 @@ include("connect.php");
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1>About Me</h1>
-                    <a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>
+                    <p>My story and how it all began.</p>
+                    <?=$book_now_btn_cta;?>
                 </div>
             </div>
         </section>
-        <section class="">
-            <h2 class="section-title text-center bg-title my-3">About Me</h2>
-            <p class="text-center section-subtitle my-3">Where my journey began in Lashes Brows and Aesthetics.</p>
-        </section>
-
+        
+        
         <section class="bg-primary-1000 py-4">
             <h2 class="section-title text-center bg-title about my-3">Mandi Saville</h2>
             <div class="container grid-2col">

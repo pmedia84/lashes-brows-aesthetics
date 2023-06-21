@@ -41,7 +41,7 @@
                     <input type="email" name="email" id="email" placeholder="eMail Address" autocomplete="email">
                 </div>
                 <button class="btn-primary btn-secondary my-2">
-                    <svg class="icon ">
+                    <svg class="icon">
                         <use href="assets/img/icons/solid.svg#envelope" />
                     </svg>
                     Subscribe
