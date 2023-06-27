@@ -11,7 +11,6 @@ include("connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("inc/header.inc.php"); ?>
-
     <title>Contact Me : Lashes Brows & Aesthetics</title>
     <link rel="canonical" href="https://<?= $domain_name; ?>/contact">
 </head>

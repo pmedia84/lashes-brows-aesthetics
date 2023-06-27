@@ -10,7 +10,7 @@ include("connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("inc/header.inc.php"); ?>
-    <title>Aesthetics Treatments in Sutton Bridge : Lashes Brows & Aesthetics</title>
+    <title>Aesthetic Treatments in Sutton Bridge : Lashes Brows & Aesthetics</title>
     <meta name="description" content="Aesthetics and beauty treatments in Sutton Bridge Lincolnshire from Lashes, Brows & Aesthetics. I offer a full range of treatments including Dermal Filers, Anti Wrinkle Treatments, Micro Needling and many more.">
     <link rel="canonical" href="https://<?= $domain_name; ?>/aesthetics-treatments-in-sutton-bridge">
 </head>
@@ -24,8 +24,8 @@ include("connect.php");
         <section class="hero std-hero">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <h1>Aesthetics Treatments</h1>
-                    <p>Amaze yourself with my Aesthetics Treatments and give yourself that ultimate indulgence you deserve!</p>
+                    <h1>Aesthetic Treatments</h1>
+                    <p>A range of Aesthetic Treatments to help rejuvenate your skin</p>
                     <?= $book_now_btn_cta; ?>
                 </div>
             </div>
@@ -33,8 +33,8 @@ include("connect.php");
         <section class="" itemscope itemtype="https://schema.org/Service">
             <meta itemprop="serviceType" content="Aesthetics Treatments">
             <div class="container">
-                <h2 class="section-title text-center mt-2">Achieve Outstanding Results</h2>
-                <p class="text-center section-subtitle my-2">This is a selection of my most popular Aesthetics Treatments that I provide, you can see my full list by <a href="price_list">viewing my price list...</a></p>
+                <h2 class="section-title text-center mt-2">For More Youthful Looking Skin … </h2>
+                <p class="text-center section-subtitle my-2">A complete range of aesthetic treatment’s are offered from Anti-Wrinkle injections & dermal filler to the fantastic Skin Boosters.Whatever you chose, you will be creating your journey to more youthful skin. You can see my full list by <a href="price_list">viewing my price list...</a></p>
             </div>
             <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                 <div class=" my-2 services-grid">
@@ -45,8 +45,8 @@ include("connect.php");
                             <h3 class="text-box-title" itemprop="name">Dermal Fillers</h3>
                             <p class="text-box-text" itemid="description">Dermal Fillers are a Hyaluronic Acid, which is found in the skin, eyes and joints.
                                 Hyaluronic Acid is mixed with other ingredients, to make it into a gel, it’s then used to add plumpness & volume to enhance the areas that loose elasticity, as we get older.
-                            
-                            <br>I currently offer Signature Lips, Russian Lips, Nasolabial & Marionette Lines.
+
+                                <br>I currently offer Signature Lips, Russian Lips, Nasolabial & Marionette Lines.
                             </p>
                             <div class="img-card-footer">
                                 <div class="text-box-price-card">
@@ -58,7 +58,7 @@ include("connect.php");
 
                     </div>
                     <div class="text-box img-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
-                        <img  src="./assets/img/services/anti-wrinkle.webp" alt="Lip filler service from Lashes Brows and Aesthetics">
+                        <img src="./assets/img/services/anti-wrinkle.webp" alt="Lip filler service from Lashes Brows and Aesthetics">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Reduce Visible Signs Of Aging, Fine Lines & Wrinkles</p>
                             <h3 class="text-box-title" itemprop="name">Anti Wrinkle Treatments</h3>
@@ -70,7 +70,7 @@ include("connect.php");
                                 <?= $book_now_btn; ?>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class=" my-2 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
@@ -112,7 +112,7 @@ include("connect.php");
                                 <?= $book_now_btn; ?>
                             </div>
                         </div>
-    
+
                     </div>
 
 
@@ -120,7 +120,7 @@ include("connect.php");
 
                 <div class=" my-2 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box img-card">
-                        <img  src="./assets/img/services/microneedling.webp" alt="Microneedling service from Lashes Brows and Aesthetics">
+                        <img src="./assets/img/services/microneedling.webp" alt="Microneedling service from Lashes Brows and Aesthetics">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Reduce the appearance of your skin straight away!</p>
                             <h3 class="text-box-title" itemprop="name">Micro Needling</h3>
@@ -138,7 +138,7 @@ include("connect.php");
 
 
                     <div class="text-box img-card">
-                        <img  src="./assets/img/services/dermaplaning.webp" alt="Dermaplaning Treatments available from Lashes, Brows & Aesthetics in Sutton Bridge">
+                        <img src="./assets/img/services/dermaplaning.webp" alt="Dermaplaning Treatments available from Lashes, Brows & Aesthetics in Sutton Bridge">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Reduce the appearance of your skin straight away!</p>
                             <h3 class="text-box-title" itemprop="name">Dermaplaning</h3>
@@ -159,13 +159,13 @@ include("connect.php");
                                 <?= $book_now_btn; ?>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
 
                 <div class=" my-2 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box img-card">
-                        <img  src="./assets/img/services/lbaa.webp" alt="">
+                        <img src="./assets/img/services/lbaa.webp" alt="">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Double Cleanse, Tone, Peel, Dermaplaning, Masque & Microneedling</p>
                             <h3 class="text-box-title" itemprop="name">LBAA Luxury Prescription Facial</h3>
@@ -182,7 +182,7 @@ include("connect.php");
 
 
                     <div class="text-box img-card">
-                        <img  src="./assets/img/services/profhilo.webp" alt="">
+                        <img src="./assets/img/services/profhilo.webp" alt="">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Perfect if you don't want to look "over-filled"</p>
                             <h3 class="text-box-title" itemprop="name">Profhilo</h3>
@@ -196,7 +196,7 @@ include("connect.php");
                                 <?= $book_now_btn; ?>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="grid-row-2col my-3 services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">

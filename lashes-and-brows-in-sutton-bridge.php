@@ -24,8 +24,8 @@ include("connect.php");
         <section class="hero std-hero lashes-hero">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <h1>Lashes & Brow Treatments</h1>
-                    <p>Give yourself that WOW Factor</p>
+                    <h1>Lash & Brow Treatments</h1>
+                    <p>Feel Dressed The Moment You Wake!”</p>
                     <?= $book_now_btn_cta; ?>
                 </div>
             </div>
@@ -33,7 +33,10 @@ include("connect.php");
         <section class="">
             <div class="container">
                 <h2 class="section-title text-center">Some of my popular treatments</h2>
-                <p class="text-center section-subtitle">This is just a few of my Lash and Brow treatments that I provide. Give yourself that WOW factor and enhance your look with some of my amazing treatments. For the full list of treatments along with their prices, you can <a href="price_list">view my price list</a>.</p>
+                <p class="text-center section-subtitle">The moment you wake up, you are already dressed, with your lashes & brows.
+                    From intense Mega Russian Volume Lashes, down to Simple Classic Lashes, your going to look awake & ready for the day.
+                    With Lashes come Brows, from a simple brow tint & shape to the highly popular laminated brow, you will feel complete.
+                    For the full list of treatments along with their prices, you can <a href="price_list">view my price list</a>.</p>
                 <div class="my-2 services-grid">
                     <div class="text-box img-card">
                         <img src="./assets/img/services/lash-extensionsv2.webp" alt="">
@@ -68,7 +71,7 @@ include("connect.php");
 
                 <div class="services-grid" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="text-box img-card">
-                        <img src="./assets/img/services/lash-extensions.webp" alt="">
+                        <img src="./assets/img/services/lash.webp" alt="">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Boost your natural lashes!</p>
                             <h3 class="text-box-title" itemprop="name">Lash Lifting</h3>
