@@ -18,7 +18,7 @@
 <!-- OG Meta Tags -->
 <meta property="og:title" content="<?= $business_name; ?>">
 <meta property="og:description" content="Lashes Brows & Aesthetics in Sutton Bridge">
-<meta property="og:image" content="<?=$_SERVER['SERVER_NAME'];?>/assets/img/og-data/og-img.png">
+<meta property="og:image" content="https://<?=$_SERVER['SERVER_NAME'];?>/assets/img/og-data/og-img.png">
 <meta property="og:url" content="<?= $_SERVER['SERVER_NAME'];?>">
 <meta property="og:type" content="website">
 <!-- /OG Meta Tags -->
