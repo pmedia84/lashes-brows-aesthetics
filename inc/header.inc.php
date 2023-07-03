@@ -18,9 +18,9 @@
 <!-- OG Meta Tags -->
 <meta property="og:title" content="<?= $business_name; ?>">
 <meta property="og:description" content="Lashes Brows & Aesthetics in Sutton Bridge">
-<meta property="og:image" content="./assets/img/og-data/og-img.png">
-<meta property="og:url" content="">
-<meta property="og:type" content="Website">
+<meta property="og:image" content="assets/img/og-data/og-img.png">
+<meta property="og:url" content="<?= $_SERVER['SERVER_NAME'];?>">
+<meta property="og:type" content="website">
 <!-- /OG Meta Tags -->
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,4 +29,23 @@
 <!-- /Google Fonts -->
 <!-- Google Recaptcha -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LdHtLwlAAAAAEuX7k_J0hlgq3MsyC2On2Ouc9JG" async="false"></script>
-<!-- Everything above this is for the head element. And is displayed on every web page -->
+<!-- Json data scheme -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BeautySalon",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sutton Bridge",
+    "addressRegion": "Lincolnshire",
+    "postalCode": "PE12 9UH",
+    "streetAddress": "Salon One, 1 High Street"
+  },
+  "name": "Lashes, Brows & Aesthetics",
+  "openingHours": [
+    "Mo-Fr 09:00-17:00"
+  ],
+  "telephone": "07827 962740",
+  "url": "https://www.lashesbrowsandaesthetics.co.uk"
+}
+</script>

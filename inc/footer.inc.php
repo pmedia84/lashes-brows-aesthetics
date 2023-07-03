@@ -2,10 +2,10 @@
     <div class="container py-3 ">
 
         <div class="footer-grid">
-            <h2 class="brand-font footer-brand" itemprop="legalName"><?= $business_name; ?></h2>
+            <h2 class="brand-font footer-brand"><?= $business_name; ?></h2>
             <div class="footer-address">
 
-                <address itemprop="Address">
+                <address>
                     <p><?= $address_line_1; ?></p>
                     <p><?= $address_line_2; ?></p>
                     <p><?= $address_line_3; ?></p>
@@ -15,8 +15,8 @@
             </div>
             <div class="footer-contact-details">
                 <ul>
-                    <li itemprop="email"><a href="mailto:<?= $business_email; ?>"><i class="fa-solid fa-envelope"></i> <?= $business_email; ?></a></li>
-                    <li itemprop="telephone"> <a href="tel:<?= $business_phone; ?>"><i class="fa-solid fa-phone"></i> <?= $business_phone; ?></a></li>
+                    <li ><a href="mailto:<?= $business_email; ?>"><i class="fa-solid fa-envelope"></i> <?= $business_email; ?></a></li>
+                    <li > <a href="tel:<?= $business_phone; ?>"><i class="fa-solid fa-phone"></i> <?= $business_phone; ?></a></li>
                 </ul>
             </div>
             <div class="footer-socials">

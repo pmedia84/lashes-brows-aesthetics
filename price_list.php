@@ -1,7 +1,11 @@
 <?php
 //connect to db
 include("connect.php");
+//define category variables
 
+//load table with categories
+$cat_q = "SELECT * FROM services_categories";
+$cat_r = mysqli_query($db, $cat_q);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +20,9 @@ include("connect.php");
     <meta name="description" content="View my full price list for all my treatments, Lashes, Brows and Aesthetics Treatments.">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Service" itemscope itemtype="https://schema.org/Service">
+    <meta itemprop="serviceType" content="Lashes, Brows & Aesthetics" />
+    <meta itemprop="provider" content="<?= $business_name; ?>">
     <!-- Nav Bar -->
     <?php include("inc/nav.inc.php"); ?>
     <!-- Hero -->
@@ -41,7 +47,7 @@ include("connect.php");
                         </div>
                     </div>
                 </form>
-                <form id="category_search_filter" action="./scripts/guest_list.script.php" method="POST">
+                <form id="category_search_filter" action="" method="POST">
 
                     <div class="form-input-wrapper">
                         <label for="user_email">Filter By Category</label>
@@ -59,59 +65,38 @@ include("connect.php");
                 </form>
             </div>
 
-
-            <div class="container my-3">
-
-
-                
+            <div class="container my-3" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
 
                 <div class="price-list" id="price-list">
-
+                    <?php if ($cat_r->num_rows > 0) : foreach ($cat_r as $cat) :
+                            $service_q = $db->query('SELECT * FROM services WHERE service_cat_id=' . $cat['service_cat_id']);
+                    ?>
+                            <h3><?= $cat['service_cat_name']; ?></h3>
+                            <?php foreach ($service_q as $service) : ?>
+                                <div class="price-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                                    <h4><span itemprop="name"><?= $service['service_name']; ?></span><span itemprop="price"><span itemprop="priceCurrency" content="GBP">&#163;</span><?= $service['service_price']; ?></h4>
+                                    <p itemprop="description"><?= $service['service_description']; ?></p>
+                                </div>
+                            <?php endforeach; ?>
+                    <?php endforeach;
+                    endif; ?>
                 </div>
 
             </div>
 
-
-
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
 
 
     <?php include("inc/footer.inc.php"); ?>
 </body>
-<script>
-    $(document).ready(function() {
-        url = "scripts/price_list.script.php?action=load-price-list";
-        $.ajax({ //load price list
-            type: "GET",
-            url: url,
-            encode: true,
-            success: function(data, responseText) {
-                $("#price-list").html(data);
 
-
-            }
-        });
-    })
-</script>
 
 <script>
-
-        //script for searching for loading price list
-        $("#price_list_search").on('keyup submit', function(event) {
+    //script for searching for loading price list
+    $("#price_list_search").on('keyup submit', function(event) {
         event.preventDefault();
         var formData = new FormData($("#price_list_search").get(0));
         formData.append("action", "price_list_search");
@@ -128,8 +113,8 @@ include("connect.php");
 
     });
 
-            //script for searching for loading price list
-            $("#category_search_filter").on('change', function(event) {
+    //script for searching for loading price list
+    $("#category_search_filter").on('change', function(event) {
         event.preventDefault();
         var formData = new FormData($("#category_search_filter").get(0));
         formData.append("action", "price_list_filter");
@@ -146,4 +131,5 @@ include("connect.php");
 
     });
 </script>
+
 </html>
