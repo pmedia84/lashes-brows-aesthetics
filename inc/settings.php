@@ -47,5 +47,9 @@ $article_default_img = "news-item.webp";
 //Book now button, used across the site
 $book_now_btn='<a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
 $book_now_btn_cta='<a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
+$domain_name="www.lashesbrowsandaesthetics.co.uk";
+
+//Open graph image url
+$og_img = "https://".$_SERVER['SERVER_NAME']."/assets/img/og-data/og-img.png";
 ?>
 

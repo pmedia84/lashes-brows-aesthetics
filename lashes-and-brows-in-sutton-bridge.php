@@ -1,19 +1,16 @@
 <?php
 //connect to db
 include("connect.php");
-
+//page meta variables
+$meta_description = "Lashes and Brow treatments in Sutton Bridge, from Lashes, Brows & Aesthetics. I provide a full selection of treatments to give yourself that wow factor. Find out how I can enhance your look!";
+$meta_page_title = "Eyebrow and Lash Treatments in Sutton Bridge : Lashes Brows & Aesthetics";
+include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
-    <title>Eyebrow and Lash Treatments in Sutton Bridge : Lashes Brows & Aesthetics</title>
     <link rel="canonical" href="https://<?= $domain_name; ?>/lashes-and-brows-in-sutton-bridge">
-    <meta name="description" content="Lashes and Brow treatments in Sutton Bridge, from Lashes, Brows & Aesthetics. I provide a full selection of treatments to give yourself that wow factor. Find out how I can enhance your look!">
+    <?php include("./inc/Page_meta.php");?>
 </head>
 
 <body itemscope itemtype="https://schema.org/Service" itemscope itemtype="https://schema.org/Service">

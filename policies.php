@@ -1,21 +1,17 @@
 <?php
 //connect to db
 include("connect.php");
-
+//page meta variables
+$meta_description = "My policies. Make sure you are familiar with these before your first appointment.";
+$meta_page_title = "My Policies : Lashes Brows & Aesthetics";
+include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
-    <!-- Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <title>My Policies : Lashes Brows & Aesthetics</title>
-    <meta name="description" content="My policies. Make sure you are familiar with these before your first appointment.">
+<link rel="canonical" href="https://<?= $domain_name; ?>/policies">
+<?php include("./inc/Page_meta.php");?>
 </head>
 
 <body>

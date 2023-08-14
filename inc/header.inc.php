@@ -27,25 +27,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
 <!-- /Google Fonts -->
-<!-- Google Recaptcha -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdHtLwlAAAAAEuX7k_J0hlgq3MsyC2On2Ouc9JG" async="false"></script>
+
 <!-- Json data scheme -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "BeautySalon",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sutton Bridge",
-    "addressRegion": "Lincolnshire",
-    "postalCode": "PE12 9UH",
-    "streetAddress": "Salon One, 1 High Street"
-  },
-  "name": "Lashes, Brows & Aesthetics",
-  "openingHours": [
-    "Mo-Fr 09:00-17:00"
-  ],
-  "telephone": "07827 962740",
-  "url": "https://www.lashesbrowsandaesthetics.co.uk"
-}
+
 </script>

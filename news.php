@@ -12,19 +12,16 @@ if ($news = $db->prepare('SELECT * FROM news_articles ORDER BY news_articles_id 
     // Get the results...
     $news_r = $news->get_result();
 }
-
+//page meta variables
+$meta_description = "Find out about my latest news and special offers.";
+$meta_page_title = "Latest News and Offers From Lashes Brows & Aesthetics Sutton Bridge";
+include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
-
-    <title>Latest News and Offers From Lashes Brows & Aesthetics Sutton Bridge</title>
-    <meta name="description" content="Find out about my latest news and special offers.">
+    <?php include("./inc/Page_meta.php");?>
     <link rel="canonical" href="https://<?= $domain_name; ?>/news-and-special-offers">
 </head>
 

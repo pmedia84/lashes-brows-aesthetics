@@ -123,7 +123,7 @@ h2,h3,h4{
 }
 /*Links */
 a{
-    color: #7e514e;
+    color: hsl(4, 24%, 40%);
     opacity: 1;
     transition: opacity 300ms ease-out;
     display: inline-block;
@@ -142,8 +142,8 @@ a:hover{
 .btn-primary {/*primary button*/
     outline: none;
     appearance: none;
-    background-color: hsl(6, 83%, 95%);
-    color: #7e514e;
+    background-color: hsl(6, 84%, 95%);
+    color: hsl(4, 24%, 40%);
     border: 1.5px solid hsl(39, 40%, 57%);
     border-radius: 5px;
     padding: .375rem .75rem;
@@ -151,7 +151,7 @@ a:hover{
    cursor: pointer;
 } 
 .btn-primary:focus{
-        box-shadow: 0 0 2px 3px hsl(6, 83%, 95%);
+        box-shadow: 0 0 2px 3px hsl(6, 84%, 95%);
         transition: box-shadow 300ms ease-out;
     } 
 .btn-primary .icon, .btn-primary .loading-btn-text{
@@ -160,7 +160,7 @@ a:hover{
 } 
 .btn-secondary{
     background-color: white;
-    color: #7e514e;
+    color: hsl(4, 24%, 40%);
 } 
 a.btn-primary{
     text-decoration: none;
@@ -240,7 +240,7 @@ input{
 } 
 input[type=text], input[type=password], textarea, select, input[type=file], input[type=email]{
     appearance: none;
-    border: 1px solid #7e514e;
+    border: 1px solid hsl(4, 24%, 40%);
     border-radius: 5px;
     padding: 0.25rem;
     transition: box-shadow 300ms ease-out;
@@ -273,7 +273,7 @@ select{
     font-size: 1rem;
     background-color: #fff;
     appearance: none;
-    border: 1px solid #7e514e;
+    border: 1px solid hsl(4, 24%, 40%);
     border-radius: 0.25rem;
     background-image: url("../img/icons/down.svg");
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ select{
   } 
 select:focus{
       outline: none;
-      box-shadow: 0 0 2pt 1pt #7e514e;
+      box-shadow: 0 0 2pt 1pt hsl(4, 24%, 40%);
         transition: box-shadow 250ms ease;
     } 
 /*button wrapper, displays buttons and spaces them out*/ 
@@ -329,7 +329,7 @@ input[type="checkbox"]{/*basic styling*/
     color: currentColor;
     width: 1.15em;
     height: 1.15em;
-    border: 1px solid #7e514e;
+    border: 1px solid hsl(4, 24%, 40%);
     border-radius: 5px;
     transform: translateY(-0.075em);
     display: grid;
@@ -344,7 +344,7 @@ input[type="checkbox"]::before{
     height: .65em;
     transform: scale(0);
     transition: 200ms transform ease-in-out;
-    box-shadow: inset 1em 1em #7e514e;
+    box-shadow: inset 1em 1em hsl(4, 24%, 40%);
     transform-origin: bottom left;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 } 
@@ -352,7 +352,7 @@ input[type="checkbox"]:checked::before{
     transform: scale(1);
 } 
 input[type="checkbox"]:focus {
-    outline: max(2px, 0.15em) solid #7e514e;
+    outline: max(2px, 0.15em) solid hsl(4, 24%, 40%);
     outline-offset: max(2px, 0.15em);
   } 
 /*///////////////////////////////////////*/ 
@@ -425,7 +425,7 @@ input[type="checkbox"]:focus {
 
     } 
 .search-input button{
-        background-color: #7e514e;
+        background-color: hsl(4, 24%, 40%);
         height: 33.33px;
         width: 33.33px;
         padding: 0.25rem;
@@ -441,7 +441,7 @@ input[type="checkbox"]:focus {
             margin: 0;
         } 
 .search-input button path{
-            fill: hsl(6, 83%, 95%);
+            fill: hsl(6, 84%, 95%);
         } 
 /*/Form error classes to apply to forms that are required*/ 
 .input-error{
@@ -466,7 +466,7 @@ input[type="checkbox"]:focus {
  } 
 /*Defines the body of the modal, centered on screen with a close icon to dismiss*/ 
 .modal-body{
-    border: 1px solid hsl(6, 83%, 95%);
+    border: 1px solid hsl(6, 84%, 95%);
     border-radius: 5px;
 
 } 
@@ -477,13 +477,13 @@ input[type="checkbox"]:focus {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid hsl(6, 83%, 95%);
+    border-bottom: 1px solid hsl(6, 84%, 95%);
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 } 
 .modal-button-section{/*footer with a confirm button*/
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-top: 1px solid hsl(6, 83%, 95%);
+    border-top: 1px solid hsl(6, 84%, 95%);
     background-color: #fff;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
@@ -579,7 +579,7 @@ input[type="checkbox"]:focus {
     padding: 1.5rem;
 } 
 .text-box-title{
-    color: #7e514e;
+    color: hsl(4, 24%, 40%);
     font-size: 2rem;
     margin-block-start: 0;
 } 
@@ -598,7 +598,7 @@ input[type="checkbox"]:focus {
     background-color: hsl(6, 83%, 90%);
     padding: 0.5rem;
     margin-block: 0.5rem;
-    color: #7e514e;
+    color: hsl(4, 24%, 40%);
     font-size: 1rem;
     border-radius: 5px;
 } 
@@ -629,7 +629,7 @@ input[type="checkbox"]:focus {
     flex-grow: 100;
 } 
 .card-body .card-body-title{
-        color: #7e514e;
+        color: hsl(4, 24%, 40%);
         font-size: 1.5rem;
         text-align: center;
         margin-block: 0.5rem;
@@ -769,7 +769,7 @@ border: 1px solid hsl(39, 40%, 57%);
 } 
 .std-card{
     padding: 0.5rem;
-    border: 1px solid hsl(6, 83%, 95%);
+    border: 1px solid hsl(6, 84%, 95%);
     border-radius: 5px;
 } 
 /*response card for form submission*/ 
@@ -793,7 +793,7 @@ border: 1px solid hsl(39, 40%, 57%);
 } 
 /*CTA banner to highlight an action.*/ 
 .cta-banner{
-    color: #7e514e;
+    color: hsl(4, 24%, 40%);
     background-color: hsl(6, 83%, 98%);
     border-radius: 5px;
 } 
@@ -865,7 +865,7 @@ border: 1px solid hsl(39, 40%, 57%);
     min-width: 30px;
 } 
 .currentpage{
-    background-color: hsl(6, 83%, 95%);
+    background-color: hsl(6, 84%, 95%);
     color: hsl(6, 83%, 98%);
 } 
 .popup{
@@ -1094,7 +1094,7 @@ border: 1px solid hsl(39, 40%, 57%);
 } 
 .nav-btn .hamburger {
         /*svg*/
-        fill: #7e514e;
+        fill: hsl(4, 24%, 40%);
     } 
 .line {
     /*animations*/
@@ -1226,15 +1226,15 @@ footer h2,footer h3{
         margin-block-start: 0;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        color: #7e514e;
+        color: hsl(4, 24%, 40%);
     } 
 footer {
-    background-color: hsl(6, 83%, 95%);
+    background-color: hsl(6, 84%, 95%);
     min-height: 12vh;
 } 
 footer .footer-brand{
         letter-spacing: 0.25rem;
-        color: #7e514e;
+        color: hsl(4, 24%, 40%);
         font-size: 1.5rem;
     } 
 @media(min-width: 768px){ 
@@ -1255,7 +1255,7 @@ footer .footer-brand {
     list-style-type: none;
 } 
 .footer-contact-details ul li > svg{
-        color: #7e514e;
+        color: hsl(4, 24%, 40%);
     } 
 .footer-contact-details ul li{
         margin-block: 0.5rem;
@@ -1576,7 +1576,7 @@ grid-template-rows: 1fr;
     }
 } 
 .post-body{
-    border: 2px solid hsl(6, 83%, 95%);
+    border: 2px solid hsl(6, 84%, 95%);
     padding: 1.5rem;
 } 
 .map{
@@ -1632,7 +1632,7 @@ grid-template-rows: 1fr;
 /*colour utilities*/ 
 .bg-primary{
     /*change bg to primary colour*/
-    background-color: hsl(6, 83%, 95%);
+    background-color: hsl(6, 84%, 95%);
 } 
 .bg-primary-1000{
     /*lighter version of primary bg colour*/
@@ -1640,7 +1640,7 @@ grid-template-rows: 1fr;
 } 
 .bg-secondary{
     /*change bg to secondary col*/
-    background-color: #7e514e;
+    background-color: hsl(4, 24%, 40%);
 } 
 .bg-tertiary{
     background-color: hsl(39, 40%, 57%);
@@ -1659,7 +1659,7 @@ grid-template-rows: 1fr;
 /*Font colours*/ 
 /*Change default font to primary colour*/ 
 .text-color-primary{
-    color: hsl(6, 83%, 95%);
+    color: hsl(6, 84%, 95%);
 } 
 /*Change font colour to white*/ 
 .text-color-white{

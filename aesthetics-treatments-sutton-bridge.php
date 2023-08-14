@@ -1,18 +1,17 @@
 <?php
 //connect to db
 include("connect.php");
+//page meta variables
+$meta_description = "Aesthetics and beauty treatments in Sutton Bridge Lincolnshire from Lashes, Brows & Aesthetics. I offer a full range of treatments including Dermal Filers, Anti Wrinkle Treatments, Micro Needling and many more.";
+$meta_page_title = "Aesthetic Treatments in Sutton Bridge : Lashes Brows & Aesthetics";
+include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
-    <title>Aesthetic Treatments in Sutton Bridge : Lashes Brows & Aesthetics</title>
-    <meta name="description" content="Aesthetics and beauty treatments in Sutton Bridge Lincolnshire from Lashes, Brows & Aesthetics. I offer a full range of treatments including Dermal Filers, Anti Wrinkle Treatments, Micro Needling and many more.">
     <link rel="canonical" href="https://<?= $domain_name; ?>/aesthetics-treatments-in-sutton-bridge">
+    <?php include("./inc/Page_meta.php");?>
 </head>
 
 <body itemscope itemtype="https://schema.org/BeautySalon">

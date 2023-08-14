@@ -53,7 +53,7 @@ if (!file_exists("../email_settings.php")) {
     $phone = filter_var($_POST['phone'], FILTER_SANITIZE_SPECIAL_CHARS);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_SPECIAL_CHARS);
 
-    //check form values and enure that no blanks are present
+    //check form values and ensure that no blanks are present
     if (trim($name) == "") {
       $response_code = 400;
       $msg = "Name cannot be left blank, please try again.";

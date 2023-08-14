@@ -11,26 +11,22 @@ $reviews = $db->query($reviews_query);
 $reviews_result_num = $reviews->num_rows;
 //load featured featured services
 $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"');
+//page meta variables
+$meta_description = "Lashes, Brows and Aesthetics treatments in Sutton Bridge, Lincolnshire. I offer a full range of services from Eyelash extensions to Derma Planing. Find out how you can give yourself that WOW factor with my treatments, you will be amazed!";
+$meta_page_title = "Lashes Brows & Aesthetics Treatments in Sutton Bridge";
 
+include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
+    <link rel="canonical" href="https://<?= $domain_name; ?>">
+    <?php include("./inc/Page_meta.php");?>
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <title>Eyebrow extensions : Lashes Brows & Aesthetics</title>
-    <meta name="description" content="Lashes, Brows and Aesthetics treatments in Sutton Bridge, Lincolnshire. I offer a full range of services from Eyelash extensions to Derma Planing. Find out how you can give yourself that WOW factor with my treatments, you will be amazed! ">
-    <link rel="canonical" href="https://<?= $domain_name; ?>">
-    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
-    <link rel="preload" fetchpriority="high" as="image" href="/assets/img/hero/hero.webp" type="image/webp">
 </head>
-
 <body itemscope itemtype="https://schema.org/BeautySalon">
     <!-- Nav Bar -->
     <?php include("inc/nav.inc.php"); ?>

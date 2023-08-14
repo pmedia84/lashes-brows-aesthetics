@@ -5,17 +5,24 @@ $article_id = $_GET['article_id'];
 $article_q = $db->query('SELECT * FROM news_articles WHERE news_articles_id=' . $article_id);
 $article_r = mysqli_fetch_assoc($article_q);
 $news_q = $db->query('SELECT * FROM news_articles  ORDER BY news_articles_id LIMIT 3');
+include("./inc/settings.php");
+//page meta variables
+$meta_description = "Find out about my latest news and special offers.";
+$meta_page_title = $article_r['news_articles_title'];
+//sort article image and set up a default if none has been supplied
+$article_img = $article_r['news_articles_img'];
+if($article_img ==""){
+    $og_img="https://".$_SERVER['SERVER_NAME']."/assets/img/og-data/news-item.webp";
+}else{
+    $og_img="https://".$_SERVER['SERVER_NAME']."/assets/img/og-data/".$article_img;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("inc/header.inc.php"); ?>
+    <?php include("./inc/Page_meta.php");?>
     <link rel="canonical" href="https://<?= $_SERVER['SERVER_NAME']; ?>/<?= strtolower(str_replace(" ", "-", $article_r['news_articles_title'])); ?>">
-    <title><?= $article_r['news_articles_title']; ?> - Latest News and Offers From Lashes Brows & Aesthetics Sutton Bridge</title>
+    <title><?= $article_r['news_articles_title']; ?></title>
 </head>
 
 <body>
