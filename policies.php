@@ -29,12 +29,11 @@ include("./inc/settings.php");
             </div>
         </section>
         <section class="container my-3">
-
             <h2 class="section-title text-center bg-title">Terms &amp; Conditions</h2>
             <div class="std-card actions-card">
                 <h2 class="my-2">Forms</h2>
                 <p>Before you attend your first appointment, you will need to have completed a consultation form. You can now do this here.</p>
-                <a href="" class="btn-primary btn-secondary my-2">
+                <a href="form" class="btn-primary btn-secondary my-2">
                     <svg class="icon start">
                         <use href="assets/img/icons/solid.svg#pencil"/>
                     </svg>Complete Booking Form</a>
