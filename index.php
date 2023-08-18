@@ -4,11 +4,8 @@ include("connect.php");
 //look for news articles first
 $news_query = ('SELECT * FROM news_articles WHERE news_articles_status ="Published" LIMIT 3');
 $news = $db->query($news_query);
-
 //load reviews
-$reviews_query = ('SELECT * FROM reviews ORDER BY reviews_date_time DESC');
-$reviews = $db->query($reviews_query);
-$reviews_result_num = $reviews->num_rows;
+$reviews_q = $db->query('SELECT * FROM reviews ORDER BY reviews_date_time DESC');
 //load featured featured services
 $services_f_q = $db->query('SELECT * FROM services WHERE service_featured="Yes"');
 //page meta variables
@@ -161,8 +158,8 @@ include("./inc/settings.php");
 
                 <div class="slider review-slider">
                     <?php
-                    if ($reviews_result_num >= 1) :
-                        foreach ($reviews as $review) :
+                    if ($reviews_q->num_rows > 0) :
+                        foreach ($reviews_q as $review) :
                     ?>
                             <div class="review-slider-review">
                                 <div class="review-body">

@@ -16,7 +16,9 @@ $emailheaderlogo = "";//logo url for inserting into the top of email bodies
 include("./connect.php");
 //connect to db and declare business details etc
 //find business details.
-$business_id = "11";
+include("./admin/scripts/functions.php");
+$cms=new CMS();
+$business_id = $cms->b_id();
 $business = $db->prepare('SELECT * FROM business WHERE business_id =' . $business_id);
 
 $business->execute();

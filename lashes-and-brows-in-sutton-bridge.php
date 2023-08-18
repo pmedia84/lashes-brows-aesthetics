@@ -12,7 +12,6 @@ include("./inc/settings.php");
     <link rel="canonical" href="https://<?= $domain_name; ?>/lashes-and-brows-in-sutton-bridge">
     <?php include("./inc/Page_meta.php");?>
 </head>
-
 <body itemscope itemtype="https://schema.org/Service" itemscope itemtype="https://schema.org/Service">
     <meta itemprop="serviceType" content="Lashes & Brows" />
     <meta itemprop="provider" content="<?= $business_name; ?>">
@@ -30,7 +29,6 @@ include("./inc/settings.php");
             </div>
         </section>
         <section>
-
             <div class="container">
                 <h2 class="section-title text-center">Some of my popular treatments</h2>
                 <p class="text-center section-subtitle">The moment you wake up, you are already dressed, with your lashes & brows.
@@ -117,16 +115,6 @@ include("./inc/settings.php");
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
 
     </main>
 
