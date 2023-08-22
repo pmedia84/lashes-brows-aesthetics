@@ -33,7 +33,7 @@ include("./inc/settings.php");
             <meta itemprop="serviceType" content="Aesthetics Treatments">
             <meta itemprop="provider" content="<?= $business_name; ?>">
             <div class="container">
-                <h2 class="section-title text-center mt-2">For More Youthful Looking Skin … </h2>
+                <h2 class="section-title text-center">For More Youthful Looking Skin … </h2>
                 <p class="text-center section-subtitle my-2">A complete range of aesthetic treatment’s are offered from Anti-Wrinkle injections & dermal filler to the fantastic Skin Boosters.Whatever you chose, you will be creating your journey to more youthful skin. My salon is in <span itemprop="areaServed" itemscope itemtype="https://schema.org/City"><span itemprop="name">Sutton Bridge</span></span>, I have all the latest equipment required to give you the best treatment you deserve.You can see my full list by <a href="price_list">viewing my price list...</a></p>
             </div>
             <div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
