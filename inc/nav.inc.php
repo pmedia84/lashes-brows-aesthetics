@@ -6,7 +6,7 @@
     <div class="nav-banner">
         <div class="nav-menu" id="nav-menu">
             <ul class="nav-links">
-                <li><a class="nav-links-item <?php if($_SERVER['REQUEST_URI']== "/" || str_contains($_SERVER['REQUEST_URI'], "index")  ){echo"link-active";}?>" href="index">Home</a></li>
+                <li><a class="nav-links-item <?php if($_SERVER['REQUEST_URI']== "/" || str_contains($_SERVER['REQUEST_URI'], "index")  ){echo"link-active";}?>" href="/">Home</a></li>
                 <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "price_list")){echo"link-active";}?>" href="price_list">Price List</a></li>
                 <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "aesthetics")){echo"link-active";}?>" href="aesthetics-treatments-sutton-bridge">Aesthetics</a></li>
                 <li><a class="nav-links-item <?php if(str_contains($_SERVER['REQUEST_URI'], "lashes")){echo"link-active";}?>" href="lashes-and-brows-in-sutton-bridge">Lashes & Brows</a></li>
