@@ -76,7 +76,7 @@ $cat_r = mysqli_query($db, $cat_q);
                                 <div class="price-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                                     <meta itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
                                     <h4><span itemprop="name"><?= $service['service_name']; ?></span><span itemprop="price"><span itemprop="priceCurrency" content="GBP">&#163;</span><?= $service['service_price']; ?></h4>
-                                    <p itemprop="description"><?= html_entity_decode($service['service_description']) ; ?></p>
+                                    <div itemprop="description"><?= html_entity_decode($service['service_description']) ; ?></div>
                                 </div>
                             <?php endforeach; ?>
                     <?php endforeach;
