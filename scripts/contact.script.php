@@ -36,7 +36,7 @@ if (!file_exists("../email_settings.php")) {
   
   $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $_POST['token']); //verify the response with the token generated from the user inout
   
-  $verify_data = json_decode($verifyResponse, true); //decode the JSON file recieved from google
+  $verify_data = json_decode($verifyResponse, true); //decode the JSON file received from google
   $score = $verify_data['score']; //identify the score
   //continue the script if the recaptcha score is greater than .7
   if ($score >= 0.7) {

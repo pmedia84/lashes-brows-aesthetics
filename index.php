@@ -51,7 +51,7 @@ include("./inc/settings.php");
                     <div class="card-body">
                         <h3 class="card-body-title">Aesthetics</h3>
                         <p>Aesthetics are becoming a main part of the Beauty Industry, and I’m pleased to say that I’m fully trained and qualified to be able to offer it all to my clients. I’m also trained in complications, first aid and body dysmorphia , so I won’t let you go out looking like the bride of Frankenstein!</p>
-                        <a class="my-2" href="aesthetics_treatments">Find Out More</a><br>
+                        <a class="my-2" href="aesthetics-treatments-sutton-bridge">Find Out More</a><br>
                         <?=$book_now_btn;?>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ include("./inc/settings.php");
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
                         <p>From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natrual lash, giving a fuller, darker efffect.</p>
-                        <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
+                        <a class="my-2" href="lashes-and-brows-in-sutton-bridge">Find Out More</a><br>
                         <?=$book_now_btn;?>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ include("./inc/settings.php");
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
                         <p>From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
-                        <a class="my-2" href="lashes_and_brows">Find Out More</a><br>
+                        <a class="my-2" href="lashes-and-brows-in-sutton-bridge">Find Out More</a><br>
                         <?=$book_now_btn;?>
                     </div>
                 </div>
