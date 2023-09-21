@@ -86,7 +86,10 @@
             <p class="mb-1">By accepting this message you are agreeing to our cookie policy. You can find out more in our <a href="privacy">Privacy Policy</a></p><br>
 
         </div>
-        <button type="button" class="btn-close close-cookies" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <button type="button" class="btn-close close-cookies" aria-label="Close">
+            <svg class="icon ">
+                        <use href="assets/img/icons/solid.svg#xmark" />
+                    </svg></button>
         <button class="btn btn-primary accept-cookies">Accept</button>
     </div>
     <div class="popup">

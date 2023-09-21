@@ -2,8 +2,8 @@
 //connect to db
 include("connect.php");
 //page meta variables
-$meta_description = "Lashes and Brow treatments in Sutton Bridge, from Lashes, Brows & Aesthetics. I provide a full selection of treatments to give yourself that wow factor. Find out how I can enhance your look!";
-$meta_page_title = "Eyebrow and Lash Treatments in Sutton Bridge : Lashes Brows & Aesthetics";
+$meta_description = "Eye Lash extensions in Sutton Bridge from Lashes Brows and Aesthetics. I also offer eyebrow treatments as well. Come along to my studio and see for yourself.";
+$meta_page_title = "Lashes And Brows - Lashes Brows & Aesthetics";
 include("./inc/settings.php");
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ include("./inc/settings.php");
         <section class="hero std-hero lashes-hero">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <h1>Lash & Brow Treatments</h1>
+                    <h1>Lashes & Brows</h1>
                     <p>"Feel Dressed The Moment You Wake!"</p>
                     <?= $book_now_btn_cta; ?>
                 </div>
@@ -30,11 +30,10 @@ include("./inc/settings.php");
         </section>
         <section>
             <div class="container">
-                <h2 class="section-title text-center">Some of my popular treatments</h2>
+                <h2 class="section-title text-center">Give yourself that wow factor</h2>
                 <p class="text-center section-subtitle">The moment you wake up, you are already dressed, with your lashes & brows.
                     From intense Mega Russian Volume Lashes, down to Simple Classic Lashes, your going to look awake & ready for the day.
-                    With Lashes come Brows, from a simple brow tint & shape to the highly popular laminated brow, you will feel complete. My salon is in <span itemprop="areaServed" itemscope itemtype="https://schema.org/City"><span itemprop="name">Sutton Bridge</span></span>, I have all the latest equipment required to give you the best treatment you deserve.
-                    For the full list of treatments along with their prices, you can <a href="price_list">view my price list</a>.</p>
+                    With Lashes come Brows, from a simple brow tint & shape to the highly popular laminated brow, you will feel complete. So for Lash and Brow treatments in  <span itemprop="areaServed" itemscope itemtype="https://schema.org/City"><span itemprop="name">Sutton Bridge</span></span>, check out the full list of treatments on <a href="price_list">my price list</a>.</p>
                 <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="my-2 services-grid">
                         <div class="text-box img-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
@@ -42,7 +41,7 @@ include("./inc/settings.php");
                             <img src="./assets/img/services/lash-extensionsv2.webp" alt="">
                             <div class="img-card-body">
                                 <p class="text-box-subtitle">Eyes Are The Window To Your Soul</p>
-                                <h3 class="text-box-title" itemprop="name">Lashes</h3>
+                                <h3 class="text-box-title" itemprop="name">Eyelash Extensions</h3>
                                 <p class="text-box-text" itemprop="description">From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natural lash, giving a fuller, darker effect. The look can vary from subtle, being Classic to extremely dramatic with Extreme Mega Volume.</p>
                                 <div class="img-card-footer">
                                     <div class="text-box-price-card">
@@ -55,7 +54,7 @@ include("./inc/settings.php");
 
                         <div class="text-box img-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                             <meta itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-                            <img src="./assets/img/services/brows.webp" alt="">
+                            <img src="./assets/img/services/brows-2.webp" alt="">
                             <div class="img-card-body">
                                 <p class="text-box-subtitle">If Eyes Are The Window To Your Soul, Then Brows Are The Frame To That Window</p>
                                 <h3 class="text-box-title" itemprop="name">Brows</h3>

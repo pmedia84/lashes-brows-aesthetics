@@ -1,6 +1,6 @@
 //hero containers, basic one for all pages, padding to bring content down below the nav bar
 .hero{
-    padding: $nav-height 0 7rem;//padding same height as nav bar
+    padding: calc($nav-height + 3rem) 0 10rem;//padding same height as nav bar
     //bg image
     position: relative;
     background-image: url("../../assets/img/hero/hero.webp");

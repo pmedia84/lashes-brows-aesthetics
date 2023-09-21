@@ -61,7 +61,7 @@ include("./inc/settings.php");
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
-                        <p>From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natrual lash, giving a fuller, darker efffect.</p>
+                        <p>From Classic to Extreme Mega Volume, I bond one lash(Classic) or more lighter weight lashes, handmade into a fan (Russian) to your natural lash, giving a fuller, darker effect.</p>
                         <a class="my-2" href="lashes-and-brows-in-sutton-bridge">Find Out More</a><br>
                         <?=$book_now_btn;?>
                     </div>
@@ -72,7 +72,7 @@ include("./inc/settings.php");
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
-                        <p>From a simple wax & shape, to the ever popular Brow Lamination & Hennna Brow, all brow treatments are catered for.</p>
+                        <p>From a simple wax & shape, to the ever popular Brow Lamination & Henna Brow, all brow treatments are catered for.</p>
                         <a class="my-2" href="lashes-and-brows-in-sutton-bridge">Find Out More</a><br>
                         <?=$book_now_btn;?>
                     </div>

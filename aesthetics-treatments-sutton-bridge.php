@@ -40,7 +40,7 @@ include("./inc/settings.php");
                 <div class=" my-2 services-grid">
                     <div class="text-box img-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                         <meta itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-                        <img class="border-std" src="./assets/img/services/dermal-filler.webp" alt="Dermal filler treatments available from Lashes, Brows & Aesthetics in Sutton Bridge">
+                        <img class="border-std" style="object-position: top;" src="./assets/img/services/dermal-filler.webp" alt="Dermal filler treatments available from Lashes, Brows & Aesthetics in Sutton Bridge">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Gain immediate and visible results</p>
                             <h3 class="text-box-title" itemprop="name">Dermal Fillers</h3>
@@ -62,7 +62,7 @@ include("./inc/settings.php");
                         <meta itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
                         <img src="./assets/img/services/anti-wrinkle.webp" alt="Lip filler service from Lashes Brows and Aesthetics">
                         <div class="img-card-body">
-                            <p class="text-box-subtitle">Reduce Visible Signs Of Aging, Fine Lines & Wrinkles</p>
+                            <p class="text-box-subtitle">Reduce Visible Signs Of Ageing, Fine Lines & Wrinkles</p>
                             <h3 class="text-box-title" itemprop="name">Anti Wrinkle Treatments</h3>
                             <p class="text-box-text" itemprop="description">Depending on the areas treated, this can last from 3-12 months.</p>
                             <div class="img-card-footer">
@@ -175,11 +175,15 @@ include("./inc/settings.php");
                         <img src="./assets/img/services/lbaa.webp" alt="">
                         <div class="img-card-body">
                             <p class="text-box-subtitle">Double Cleanse, Tone, Peel, Dermaplaning, Masque & Microneedling</p>
-                            <h3 class="text-box-title" itemprop="name">LBAA Luxury Prescription Facial</h3>
-                            <p class="text-box-text" itemprop="description">Recommendation for maximum benefit are a course of 4-6 monthly treatments</p>
+                            <h3 class="text-box-title" itemprop="name">Glo Tox luxury facial</h3>
+                            <div class="text-box-text" itemprop="description">
+                            <p class="text-box-text">Chemical Peel, Dermaplaning & Micro-needling with a tailored Tox cocktail serum Amazing for the rejuvenation of your skin!!</p>
+                            <p class="text-box-text">For maximum results, a course of at least 3 Glo Tox Luxury Facials is recommended, you will be amazed at the results.</p> 
+                            </div>
+                                                       
                             <div class="img-card-footer">
                                 <div class="text-box-price-card">
-                                    <p>Starting From <span>&pound;125.00</span></p>
+                                    <p>Starting From <span>&pound;140.00</span></p>
                                 </div>
                                 <?= $book_now_btn; ?>
                             </div>
