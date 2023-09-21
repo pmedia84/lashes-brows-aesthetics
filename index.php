@@ -68,7 +68,7 @@ include("./inc/settings.php");
                 </div>
                 <div class="card span">
                     <div class="card-header">
-                        <img src="./assets/img/services/brows.webp" alt="">
+                        <img src="./assets/img/services/brows-2.webp" alt="">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
