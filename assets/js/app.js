@@ -193,7 +193,7 @@ function checkCookie(cname) {
     }
 }
 
-$(window).on("load", function () {
+$(document).ready(function () {
     //check if the user has subscribed or not
     if (getCookie("subscribed") == "") {
         $(".popup").addClass("popup-active");
