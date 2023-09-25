@@ -24,7 +24,7 @@
                 <ul>
                     <?php if ($socials_result_num >= 1) : ?>
                         <?php foreach ($socials as $social) : ?>
-                            <li><a href="http://<?= $social['business_socials_url']; ?>" target="_blank" rel="noopener noreferrer"><?= $social['socials_type_icon']; ?> <?= $social['socials_type_name']; ?></a></li>
+                            <li><a href="<?= $social['business_socials_url']; ?>" target="_blank" rel="noopener noreferrer"><?= $social['socials_type_icon']; ?> <?= $social['socials_type_name']; ?></a></li>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ul>
