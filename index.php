@@ -46,7 +46,7 @@ include("./inc/settings.php");
             <div class="container grid-row-3col">
                 <div class="card">
                     <div class="card-header">
-                        <img src="./assets/img/services/lip-filler.webp" alt="">
+                        <img src="./assets/img/services/lip-filler.webp" alt="Aesthetics treatments in Sutton Bridge">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Aesthetics</h3>
@@ -57,7 +57,7 @@ include("./inc/settings.php");
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="./assets/img/services/lashes.webp" alt="">
+                        <img src="./assets/img/services/lashes.webp" alt="Eye lash extensions in Sutton Bridge">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Lash Extensions</h3>
@@ -68,7 +68,7 @@ include("./inc/settings.php");
                 </div>
                 <div class="card span">
                     <div class="card-header">
-                        <img src="./assets/img/services/brows-2.webp" alt="">
+                        <img src="./assets/img/services/brows-2.webp" alt="Eye brow transformations in Sutton Bridge">
                     </div>
                     <div class="card-body">
                         <h3 class="card-body-title">Eye Brows</h3>
@@ -82,11 +82,11 @@ include("./inc/settings.php");
         <div class="parallax-bg">
         </div>
         <section class="bg-primary-1000 py-4">
-            <h2 class="section-title text-center bg-title about my-3" itemprop="founder">Mandi Saville</h2>
+            <h2 class="section-title text-center bg-title about my-3" itemprop="founder">Mandi</h2>
             <div class="container grid-2col">
                 <div class="grid-col">
                     <div class="profile-card">
-                        <img class="profile-img" src="./assets/img/mandi-saville.jpg" alt="">
+                        <img class="profile-img" src="./assets/img/mandi-saville.jpg" alt="Mandi - Owner of lashes Brows & Aesthetics, Sutton Bridge">
                         <div class="profile-card-body">
                             <h3 class="my-2">My Story</h3>
                             <p>My journey started in the Eyelash Industry in 2011, when I decided to take a course in Classic Lash Extensions at Pinewood TV Studios with the Award Winning Eyelash Emporium...</p>

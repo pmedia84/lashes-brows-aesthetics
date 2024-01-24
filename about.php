@@ -28,7 +28,7 @@ include("./inc/settings.php");
         
         
         <section class="bg-primary-1000 py-4">
-            <h2 class="section-title text-center bg-title about my-3">Mandi Saville</h2>
+            <h2 class="section-title text-center bg-title about my-3">Mandi</h2>
             <div class="container grid-2col">
                 <div class="grid-col">
                     <div class="profile-card">
