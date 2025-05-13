@@ -38,6 +38,8 @@
   "url": "https://www.lashesbrowsandaesthetics.co.uk"
 }
 </script>
+<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="assets/css/styles.css">

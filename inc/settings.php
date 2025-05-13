@@ -47,8 +47,10 @@ $socials_result_num = $socials->num_rows;
 $article_default_img = "news-item.webp";
 
 //Book now button, used across the site
-$book_now_btn='<a class="btn-primary" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
-$book_now_btn_cta='<a class="btn-primary btn-cta my-3" href="https://app.pocketpa.com/online-booking/HpgvjVINf1" target="_blank">Book Now</a>';
+$book_now_btn='<script>new timelyButton("lashesbrowsbymandi", {"style":"light"});</script>
+';
+$book_now_btn_cta='<script>new timelyButton("lashesbrowsbymandi", {"style":"light"});</script>
+';
 $domain_name="www.lashesbrowsandaesthetics.co.uk";
 
 //Open graph image url
