@@ -18,14 +18,12 @@
       width: 100%;
     }
 
-    .btn-close{
-      height: 1rem;
-      background-size: 1.5rem;
-    }
+
 }
 .cookie-overlay-icon{
   display: grid;
   place-items: center;
+  fill: red;
 }
   .cookie-text{
    font-size: 1rem;
